@@ -1,12 +1,13 @@
 # Copyright (C) 2024 Frank419
 # This file is distributed under the GNU General Public License v3.0 or later.
 # SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
+# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
 msgid ""
 msgstr ""
 "Project-Id-Version: MinimalistFlex 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/minimalistflex\n"
-"POT-Creation-Date: 2024-08-19T23:49:40+00:00\n"
-"PO-Revision-Date: 2024-08-20 07:50+0800\n"
+"POT-Creation-Date: 2024-08-19T23:54:44+00:00\n"
+"PO-Revision-Date: 2024-08-20 07:55+0800\n"
 "Last-Translator: 枫原万叶 <hufang2007@icloud.com>\n"
 "Language-Team: Chinese <kde-i18n-doc@kde.org>\n"
 "Language: zh_CN\n"
@@ -120,7 +121,6 @@ msgstr "返回页首"
 
 #. translators: %s: Link to theme author website.
 #: footer.php:78
-#, fuzzy
 msgid "Theme <a href=\"%s\">MinimalistFlex</a>."
 msgstr "<a href=\"%s\">MinimalistFlex</a> 主题。"
 
@@ -243,20 +243,25 @@ msgstr "以下是「菜单 2」小工具中的小工具。此文本并不会链�
 
 #: includes/class-color-palette-control.php:35
 msgctxt "color palette"
+msgid "Minimal"
+msgstr "简洁"
+
+#: includes/class-color-palette-control.php:36
+msgctxt "color palette"
 msgid "Light"
 msgstr "明亮"
 
-#: includes/class-color-palette-control.php:36
+#: includes/class-color-palette-control.php:37
 msgctxt "color palette"
 msgid "Dark"
 msgstr "暗黑"
 
-#: includes/class-color-palette-control.php:37
+#: includes/class-color-palette-control.php:38
 msgctxt "color palette"
 msgid "Galatic"
 msgstr "星系"
 
-#: includes/class-color-palette-control.php:38
+#: includes/class-color-palette-control.php:39
 msgctxt "color palette"
 msgid "Spring"
 msgstr "春光"
@@ -1089,3 +1094,4 @@ msgstr "MinimalistFlex 暗背景色"
 msgctxt "Color name"
 msgid "MinimalistFlex White"
 msgstr "MinimalistFlex 白色"
+
