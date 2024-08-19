@@ -1,27 +1,12 @@
-# Copyright (C) 2024 Kaedehara Kazuha
+# Copyright (C) 2024 Frank419
 # This file is distributed under the GNU General Public License v3.0 or later.
-# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
-# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
-# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
-# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
-# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
-# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
-# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
-# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
-# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
-# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
-# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
-# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
-# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
-# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
-# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
 # SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
 msgid ""
 msgstr ""
-"Project-Id-Version: Crystal 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/crystal\n"
-"POT-Creation-Date: 2024-08-19T08:59:02+00:00\n"
-"PO-Revision-Date: 2024-08-19 17:43+0800\n"
+"Project-Id-Version: MinimalistFlex 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/minimalistflex\n"
+"POT-Creation-Date: 2024-08-19T23:49:40+00:00\n"
+"PO-Revision-Date: 2024-08-20 07:50+0800\n"
 "Last-Translator: 枫原万叶 <hufang2007@icloud.com>\n"
 "Language-Team: Chinese <kde-i18n-doc@kde.org>\n"
 "Language: zh_CN\n"
@@ -34,40 +19,40 @@ msgstr ""
 
 #. Theme Name of the theme
 #: style.css
-msgid "Crystal"
-msgstr "Crystal"
-
-#. Theme URI of the theme
-#. Author URI of the theme
-#: style.css
-msgid "https://onmyodev.com/"
-msgstr "https://onmyodev.com/"
+msgid "MinimalistFlex"
+msgstr "MinimalistFlex"
 
 #. Description of the theme
 #: style.css
 msgid ""
-"Crystal is an elegant, easy to use theme that aims to provide a smooth user "
-"experience. As a classic theme, we try to provide as many options as "
-"possible, while not being overwhelming. With full support of flexible header "
-"images, custom colors and layout, multiple widget areas, you can still "
-"customize your site in a lot of ways. Compatibility is also an important "
-"affair: Crystal is tested on many versions with a minimum of WordPress 4.9 "
-"and PHP 5.6, ensuring that almost everyone can enjoy the theme without "
-"worrying to upgrade. Mobile users are also considered well: Crystal is fully "
-"responsive on its own, and works well even on very small screen sizes!"
+"MinimalistFlex is an elegant, easy to use theme that aims to provide a "
+"smooth user experience. As a classic theme, we try to provide as many "
+"options as possible, while not being overwhelming. With full support of "
+"flexible header images, custom colors and layout, multiple widget areas, you "
+"can still customize your site in a lot of ways. Compatibility is also an "
+"important affair: MinimalistFlex is tested on many versions with a minimum "
+"of WordPress 4.9 and PHP 5.6, ensuring that almost everyone can enjoy the "
+"theme without worrying to upgrade. Mobile users are also considered well: "
+"MinimalistFlex is fully responsive on its own, and works well even on very "
+"small screen sizes!"
 msgstr ""
-"Crystal 是一款优雅的，便于使用的主题，其致力于为所有用户提供良好的用户体验。"
-"作为一款经典主题，我们提供了尽可能多的选项，允许您控制您站点的方方面面，同时"
-"也确保选项不会难以理解。主题支持可变大小的页眉图像、自定义颜色、布局、多个小"
-"组件区域等功能。我们同样很重视兼容性：Crystal 在诸多的 WordPress 版本上进行测"
-"试，其中的最低版本为 WordPress 4.9 和 PHP 5.6，确保大多数用户无需升级就可以顺"
-"利地使用主题。移动用户也不会被遗忘：Crystal 从设计之初就确保响应式设计始终可"
-"用，就算在很小的屏幕尺寸上也能良好工作！"
+"MinimalistFlex 是一款优雅的，便于使用的主题，其致力于为所有用户提供良好的用户"
+"体验。作为一款经典主题，我们提供了尽可能多的选项，允许您控制您站点的方方面"
+"面，同时也确保选项不会难以理解。主题支持可变大小的页眉图像、自定义颜色、布"
+"局、多个小组件区域等功能。我们同样很重视兼容性：MinimalistFlex 在诸多的 "
+"WordPress 版本上进行测试，其中的最低版本为 WordPress 4.9 和 PHP 5.6，确保大多"
+"数用户无需升级就可以顺利地使用主题。移动用户也不会被遗忘：MinimalistFlex 从设"
+"计之初就确保响应式设计始终可用，就算在很小的屏幕尺寸上也能良好工作！"
 
 #. Author of the theme
 #: style.css
 msgid "Frank419"
 msgstr "Frank419"
+
+#. Author URI of the theme
+#: style.css
+msgid "https://onmyodev.com/"
+msgstr "https://onmyodev.com/"
 
 #: 404.php:11
 msgid "You&apos;ve reached the edge of the world."
@@ -135,8 +120,9 @@ msgstr "返回页首"
 
 #. translators: %s: Link to theme author website.
 #: footer.php:78
-msgid "Theme <a href=\"%s\">Crystal</a>."
-msgstr "<a href=\"%s\">Crystal</a> 主题。"
+#, fuzzy
+msgid "Theme <a href=\"%s\">MinimalistFlex</a>."
+msgstr "<a href=\"%s\">MinimalistFlex</a> 主题。"
 
 #: functions.php:59
 msgctxt "sidebar name"
@@ -893,12 +879,12 @@ msgid "Choose what to display in your footer credit section."
 msgstr "选择要在页脚的致谢部分中显示什么内容。"
 
 #: includes/customizer.php:809
-msgid "Both Crystal credits and custom footer text."
-msgstr "同时显示 Crystal 致谢内容和自定义页脚文本。"
+msgid "Both MinimalistFlex credits and custom footer text."
+msgstr "同时显示 MinimalistFlex 致谢内容和自定义页脚文本。"
 
 #: includes/customizer.php:810
-msgid "Crystal credits only."
-msgstr "仅显示 Crystal 致谢内容。"
+msgid "MinimalistFlex credits only."
+msgstr "仅显示 MinimalistFlex 致谢内容。"
 
 #: includes/customizer.php:811
 msgid "Custom footer text only."
@@ -1056,101 +1042,50 @@ msgstr "标签："
 
 #: theme.json
 msgctxt "Color name"
-msgid "Crystal Primary"
-msgstr "Crystal 主要颜色"
+msgid "MinimalistFlex Primary"
+msgstr "MinimalistFlex 颜色"
 
 #: theme.json
 msgctxt "Color name"
-msgid "Crystal Secondary"
-msgstr "Crystal 次要颜色"
+msgid "MinimalistFlex Secondary"
+msgstr "MinimalistFlex 次级色"
 
 #: theme.json
 msgctxt "Color name"
-msgid "Crystal Success"
-msgstr "Crystal 成功色"
+msgid "MinimalistFlex Success"
+msgstr "MinimalistFlex 成功色"
 
 #: theme.json
 msgctxt "Color name"
-msgid "Crystal Warning"
-msgstr "Crystal 警告色"
+msgid "MinimalistFlex Warning"
+msgstr "MinimalistFlex 警告色"
 
 #: theme.json
 msgctxt "Color name"
-msgid "Crystal Danger"
-msgstr "Crystal 危险色"
+msgid "MinimalistFlex Danger"
+msgstr "MinimalistFlex 危险色"
 
 #: theme.json
 msgctxt "Color name"
-msgid "Crystal Tint"
-msgstr "Crystal 强调色"
+msgid "MinimalistFlex Tint"
+msgstr "MinimalistFlex 强调色"
 
 #: theme.json
 msgctxt "Color name"
-msgid "Crystal Tint Alt"
-msgstr "Crystal 替代强调色"
+msgid "MinimalistFlex Tint Alt"
+msgstr "MinimalistFlex 替代强调色"
 
 #: theme.json
 msgctxt "Color name"
-msgid "Crystal Default"
-msgstr "Crystal 默认颜色"
+msgid "MinimalistFlex Default"
+msgstr "MinimalistFlex 默认颜色"
 
 #: theme.json
 msgctxt "Color name"
-msgid "Crystal Dark Background"
-msgstr "Crystal 暗背景色"
+msgid "MinimalistFlex Dark Background"
+msgstr "MinimalistFlex 暗背景色"
 
 #: theme.json
 msgctxt "Color name"
-msgid "Crystal White"
-msgstr "Crystal 白色"
-
-#~ msgid "L3 Background"
-#~ msgstr "L3 背景色"
-
-#~ msgid "L1 Text"
-#~ msgstr "L1 文本色"
-
-#~ msgid "L2 Text"
-#~ msgstr "L2 文本色"
-
-#~ msgid "The L3 background color (darkest)."
-#~ msgstr "L3 背景色（最深的背景色）。"
-
-#~ msgid "The L1 text color (darkest). Less used than the default color."
-#~ msgstr "L1 文本色（最深的文本色）。并没有默认颜色那么常用。"
-
-#~ msgid "The L2 text color. Rarely used."
-#~ msgstr "L2 文本色。极少使用。"
-
-#~ msgid "Kaedehara Kazuha"
-#~ msgstr "枫原万叶"
-
-#~ msgid "L1 Background Color"
-#~ msgstr "L1 背景色"
-
-#~ msgid "L2 Background Color"
-#~ msgstr "L2 背景色"
-
-#~ msgid "L3 Text Color"
-#~ msgstr "L3 文本色"
-
-#~ msgid "Link Color"
-#~ msgstr "链接色"
-
-#~ msgid "Tint Color C"
-#~ msgstr "强调色 C"
-
-#~ msgid "The L3 text color (lightest). Rarely used."
-#~ msgstr "L3 文本色。极少使用。"
-
-#~ msgctxt "customizer section"
-#~ msgid "Interface"
-#~ msgstr "界面"
-
-#~ msgid ""
-#~ "Enter the height you wish to use for the thumbnail images (in pixels). "
-#~ "Alternatively, enter \"auto\" if you don't wish to crop the images."
-#~ msgstr ""
-#~ "输入一个您希望使用的特色图像高度（以像素为单位）。您也可以输入「auto」来禁"
-#~ "用对特色图像的剪裁。"
-
+msgid "MinimalistFlex White"
+msgstr "MinimalistFlex 白色"

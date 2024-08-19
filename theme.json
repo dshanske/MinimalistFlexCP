@@ -6,53 +6,53 @@
 			"palette": [
 				{
 					"color": "#00aaff",
-					"name": "Crystal Primary",
-					"slug": "crystal-primary"
+					"name": "MinimalistFlex Primary",
+					"slug": "minimalistflex-primary"
 				},
 				{
 					"color": "#666666",
-					"name": "Crystal Secondary",
-					"slug": "crystal-secondary"
+					"name": "MinimalistFlex Secondary",
+					"slug": "minimalistflex-secondary"
 				},
 				{
 					"color": "#00dc37",
-					"name": "Crystal Success",
-					"slug": "crystal-success"
+					"name": "MinimalistFlex Success",
+					"slug": "minimalistflex-success"
 				},
                 {
                     "color": "#ebb400",
-                    "name": "Crystal Warning",
-                    "slug": "crystal-warning"
+                    "name": "MinimalistFlex Warning",
+                    "slug": "minimalistflex-warning"
                 },
                 {
                     "color": "#ff5500",
-                    "name": "Crystal Danger",
-                    "slug": "crystal-danger"
+                    "name": "MinimalistFlex Danger",
+                    "slug": "minimalistflex-danger"
                 },
                 {
                     "color": "#ffd900",
-                    "name": "Crystal Tint",
-                    "slug": "crystal-tint"
+                    "name": "MinimalistFlex Tint",
+                    "slug": "minimalistflex-tint"
                 },
                 {
                     "color": "#5b9cff",
-                    "name": "Crystal Tint Alt",
-                    "slug": "crystal-tint-alt"
+                    "name": "MinimalistFlex Tint Alt",
+                    "slug": "minimalistflex-tint-alt"
                 },
                 {
                     "color": "#000000",
-                    "name": "Crystal Default",
-                    "slug": "crystal-default"
+                    "name": "MinimalistFlex Default",
+                    "slug": "minimalistflex-default"
                 },
                 {
                     "color": "#333333",
-                    "name": "Crystal Dark Background",
-                    "slug": "crystal-dark-bg"
+                    "name": "MinimalistFlex Dark Background",
+                    "slug": "minimalistflex-dark-bg"
                 },
                 {
                     "color": "#ffffff",
-                    "name": "Crystal White",
-                    "slug": "crystal-white"
+                    "name": "MinimalistFlex White",
+                    "slug": "minimalistflex-white"
                 }
 			]
 		}

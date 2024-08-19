@@ -806,8 +806,8 @@ function minimalistflex_customize_register( $wp_customize ) {
         'label' => __( 'Footer Options', 'minimalistflex' ),
         'description' => __( 'Choose what to display in your footer credit section.', 'minimalistflex' ),
         'choices' => Array(
-            'both' => __( 'Both minimalistflex credits and custom footer text.', 'minimalistflex' ),
-            'minimalistflex' => __( 'minimalistflex credits only.', 'minimalistflex' ),
+            'both' => __( 'Both MinimalistFlex credits and custom footer text.', 'minimalistflex' ),
+            'minimalistflex' => __( 'MinimalistFlex credits only.', 'minimalistflex' ),
             'custom' => __( 'Custom footer text only.', 'minimalistflex' ),
             'none' => __( 'Neither.', 'minimalistflex' )
         )
