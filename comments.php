@@ -1,0 +1,58 @@
+<?php
+if ( !defined( 'WPINC' ) ) {
+    die;
+}
+?>
+
+<?php
+if ( post_password_required() ) {
+	return;
+}
+?>
+
+<div class="comments-area">
+	<?php if ( have_comments() ) : ?>
+		<h2 class="comments-title">
+			<?php
+			printf(
+				/* translators: %1$s: Number of comments. %2$s: Post title. */
+				_nx(
+					'One comment on "%2$s"',
+					'%1$s comments on "%2$s"',
+					get_comments_number(),
+					'comments title',
+					'minimalistflex'
+				),
+				number_format_i18n( get_comments_number() ),
+				'<span>' . get_the_title() . '</span>'
+			);
+			?>
+		</h2>
+
+		<ul class="comment-list">
+			<?php
+			wp_list_comments( array(
+				'style'       => 'ul',
+				'short_ping'  => true,
+				'avatar_size' => 40,
+			) );
+			?>
+		</ul>
+
+		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
+			<nav class="nav-links navigation comment-navigation" role="navigation">
+				<h1 class="screen-reader-text section-heading"><?php _e( 'Comment navigation', 'minimalistflex' ); ?></h1>
+				<div class="previous"><?php previous_comments_link( __( '&larr; Older Comments', 'minimalistflex' ) ); ?></div>
+				<div class="next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'minimalistflex' ) ); ?></div>
+			</nav>
+		<?php endif; ?>
+
+		<?php if ( ! comments_open() && get_comments_number() ) : ?>
+			<p class="no-comments"><?php _e( 'Comments are closed.', 'minimalistflex' ); ?></p>
+		<?php endif; ?>
+
+	<?php endif; ?>
+
+	<?php comment_form(); ?>
+
+</div>

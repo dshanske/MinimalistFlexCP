@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+    "settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#00aaff",
+					"name": "Crystal Primary",
+					"slug": "crystal-primary"
+				},
+				{
+					"color": "#666666",
+					"name": "Crystal Secondary",
+					"slug": "crystal-secondary"
+				},
+				{
+					"color": "#00dc37",
+					"name": "Crystal Success",
+					"slug": "crystal-success"
+				},
+                {
+                    "color": "#ebb400",
+                    "name": "Crystal Warning",
+                    "slug": "crystal-warning"
+                },
+                {
+                    "color": "#ff5500",
+                    "name": "Crystal Danger",
+                    "slug": "crystal-danger"
+                },
+                {
+                    "color": "#ffd900",
+                    "name": "Crystal Tint",
+                    "slug": "crystal-tint"
+                },
+                {
+                    "color": "#5b9cff",
+                    "name": "Crystal Tint Alt",
+                    "slug": "crystal-tint-alt"
+                },
+                {
+                    "color": "#000000",
+                    "name": "Crystal Default",
+                    "slug": "crystal-default"
+                },
+                {
+                    "color": "#333333",
+                    "name": "Crystal Dark Background",
+                    "slug": "crystal-dark-bg"
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "Crystal White",
+                    "slug": "crystal-white"
+                }
+			]
+		}
+	}
+}

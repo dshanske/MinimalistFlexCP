@@ -1,0 +1,10 @@
+jQuery(document).ready(function($){
+    $("#menu-toggle").click(function(e){
+        e.preventDefault()
+        $(this).parent().eq(0).toggleClass("active")
+    })
+    $("#custom-menu-2-focus").click(function(e){
+        e.preventDefault()
+    })
+    $("body").removeClass("loading")
+})
