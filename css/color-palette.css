@@ -18,6 +18,10 @@
     background-position: center center;
 }
 
+.palette-clear {
+    border: dashed 1px #c3c4c7;
+}
+
 .palette > button {
     display: block;
     width: 100%;
@@ -32,6 +36,10 @@
 
 .palette > button:hover {
     background-color: #ffffff3f;
+}
+
+.palette-clear > button:hover {
+    background-color: #fff;
 }
 
 #minimalistflex-palette-galatic,
