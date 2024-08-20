@@ -1,7 +1,7 @@
 /**
  * Theme Name:        MinimalistFlex
  * Description:       MinimalistFlex is an elegant, easy to use theme that aims to provide a smooth user experience. As a classic theme, we try to provide as many options as possible, while not being overwhelming. With full support of flexible header images, custom colors and layout, multiple widget areas, you can still customize your site in a lot of ways. Compatibility is also an important affair: MinimalistFlex is tested on many versions with a minimum of WordPress 4.9 and PHP 5.6, ensuring that almost everyone can enjoy the theme without worrying to upgrade. Mobile users are also considered well: MinimalistFlex is fully responsive on its own, and works well even on very small screen sizes!
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Frank419
  * Author URI:        https://onmyodev.com/
  * Tags:              two-columns ,left-sidebar, right-sidebar, custom-colors, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, sticky-post, theme-options, translation-ready, blog
@@ -871,6 +871,7 @@ a.panel-author:focus {
 
 .singular-author {
     padding: 1em;
+    clear: both;
 }
 
 .author-card {
@@ -1107,6 +1108,7 @@ p[class*=comment-form-] {
 .below-content-widgets {
     padding: 0;
     margin: 0;
+    clear: both;
 }
 
 .panel.widget {
@@ -1555,10 +1557,6 @@ a img.alignwide {
     .custom-menu-2-menu {
         width: 100%;
         display: block !important;
-    }
-
-    .menu-2-widgets > li {
-        margin: 0;
     }
 
     .menu-2-widgets > *:last-child {
