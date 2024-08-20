@@ -39,5 +39,8 @@ As a bonus, we have 4 pre-built color palettes for you.
 
 ## Changelog
 
+### 1.0.1
+* Addressed clear float issues.
+
 ### 1.0.0
 * Initial release.
