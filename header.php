@@ -97,7 +97,7 @@ $label = get_theme_mod( 'minimalistflex_header_label' );
             <?php if ( has_nav_menu( 'main-menu' ) ): ?>
                 <div id="minimalistflex-menu-nav-menu">
                     <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-                    <a id="minimalistflex-menu-focus-hack" href="#minimalistflex-menu-focus-hack" aria-label="<?php esc_attr_e( 'This element sends you back to the close menu button.', 'crystal' ) ?>"></a>
+                    <a id="minimalistflex-menu-focus-hack" href="#minimalistflex-menu-focus-hack" aria-label="<?php esc_attr_e( 'This element sends you back to the close menu button.', 'minimalistflex' ) ?>"></a>
                 </div>
             <?php endif; ?>
         </nav>
