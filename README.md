@@ -39,6 +39,12 @@ As a bonus, we have 4 pre-built color palettes for you.
 
 ## Changelog
 
+### 1.0.2
+* Addressed keyboard navigation issues. Implemented a mechanism to trap focus within the open menu.
+* Fixed improper usage of esc_attr on URLs. Used esc_url instead.
+* Added license information for images.
+* Removed plugin functionality: Login / Logout.
+
 ### 1.0.1
 * Addressed clear float issues.
 
