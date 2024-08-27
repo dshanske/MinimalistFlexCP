@@ -28,14 +28,5 @@ if ( !defined( 'WPINC' ) ) {
                 <?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
             </ul>
         </li>
-
-        <li id="meta" class="panel widget">
-            <h3 class="widget-title"><?php _e( 'Meta', 'minimalistflex' ); ?></h3>
-            <ul>
-                <?php wp_register(); ?>
-                <li><?php wp_loginout(); ?></li>
-                <?php wp_meta(); ?>
-            </ul>
-        </li>
     </ul>
 <?php endif; ?>
