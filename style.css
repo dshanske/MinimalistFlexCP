@@ -215,6 +215,10 @@ table tbody tr:nth-child(2n) {
     )
 }
 
+.gallery-caption {
+    text-align: center;
+}
+
 /*
  * Header styles.
  */

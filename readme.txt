@@ -6,6 +6,7 @@ Tested up to:      6.6
 Requires at least: 4.9
 License:           GNU General Public License v3.0 or later
 License URI:       https://www.gnu.org/licenses/gpl-3.0.html
+Copyright:         The MinimalistFlex theme, Copyright Frank419 2024, licensed under GPLv3.
 
 MinimalistFlex is an elegant, easy to use theme that aims to 
 provide a smooth user experience.
@@ -52,3 +53,7 @@ As a bonus, we have 4 pre-built color palettes for you.
 
 = 1.0.0 =
 * Initial release.
+
+== Resources ==
+* screenshot.jpg, by Frank419, licensed under CC0 (https://creativecommons.org/publicdomain/zero/1.0/deed)
+* All images found in the /defaults folder, designed by Frank419 with Inkscape, licensed under CC0 (https://creativecommons.org/publicdomain/zero/1.0/deed)
