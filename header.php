@@ -51,7 +51,7 @@ $label = get_theme_mod( 'minimalistflex_header_label' );
 
 <a class="screen-reader-text" href="#main-content"><?php esc_html_e( 'Skip to main content', 'minimalistflex' ) ?></a>
 
-<?php if( get_header_image() && $header == 'yes' ): ?>
+<?php if( get_header_image() && $header === 'yes' ): ?>
     <header class="minimalistflex-header-image">
         <?php if ( strlen( $link ) ): ?>
             <a href="<?php echo esc_url( $link ) ?>" aria-label="<?php

@@ -31,7 +31,7 @@ if ( !defined( 'WPINC' ) ) {
             echo esc_html( 'auto;' );
         }
     ?>
-    <?php if ( get_theme_mod( 'minimalistflex_color_disable_shadow', 'no' ) == 'yes' ): ?>
+    <?php if ( get_theme_mod( 'minimalistflex_color_disable_shadow', 'no' ) === 'yes' ): ?>
     --minimalistflex-shadow: transparent;
     --minimalistflex-shadow-light: transparent;
     <?php else: ?>

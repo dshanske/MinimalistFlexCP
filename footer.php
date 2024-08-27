@@ -35,7 +35,7 @@ if( is_home() ) {
 </main>
 
 <ul class="minimalistflex-controls">
-    <?php if ( get_theme_mod( 'minimalistflex_interface_scroll_top', 'yes' ) == 'yes' ): ?>
+    <?php if ( get_theme_mod( 'minimalistflex_interface_scroll_top', 'yes' ) === 'yes' ): ?>
         <li><a href="#main-content" aria-label="<?php esc_attr_e( 'Back to top', 'minimalistflex' ) ?>">:D</a></li>
     <?php endif; ?>
 </ul>
@@ -45,10 +45,10 @@ if( is_home() ) {
         <?php $sidebars = get_theme_mod( 'minimalistflex_footer_widget_layout', 'one' ); ?>
         <?php
             get_sidebar( 'footer' );
-            if ( $sidebars == 'two' || $sidebars == 'three' ) {
+            if ( $sidebars === 'two' || $sidebars === 'three' ) {
                 get_sidebar( 'footer-2' );
             }
-            if ( $sidebars == 'three' ) {
+            if ( $sidebars === 'three' ) {
                 get_sidebar( 'footer-3' );
             }
         ?>
@@ -68,10 +68,10 @@ if( is_home() ) {
         <?php endif; ?>
         <div class="footer-credits">
             <?php $footer_type = get_theme_mod( 'minimalistflex_footer_type', 'both' ); ?>
-            <?php if ( $footer_type == 'both' || $footer_type == 'custom' ): ?>
+            <?php if ( $footer_type === 'both' || $footer_type === 'custom' ): ?>
                 <?php echo wp_filter_post_kses( get_theme_mod( 'minimalistflex_footer_text' ) ) ?>
             <?php endif; ?>
-            <?php if ( $footer_type == 'both' || $footer_type == 'minimalistflex' ): ?>
+            <?php if ( $footer_type === 'both' || $footer_type === 'minimalistflex' ): ?>
                 <?php
                     printf(
                         /* translators: %s: Link to theme author website. */

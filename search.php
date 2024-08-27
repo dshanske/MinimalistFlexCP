@@ -8,7 +8,7 @@ if ( !defined( 'WPINC' ) ) {
 
 <?php if ( have_posts() ) : ?>
     <div class="minimalistflex-search">
-        <?php if ( get_theme_mod( 'minimalistflex_layout_search_title', 'yes' ) == 'yes' ): ?>
+        <?php if ( get_theme_mod( 'minimalistflex_layout_search_title', 'yes' ) === 'yes' ): ?>
             <h1 class="search-title panel">
                 <?php
                     printf(
@@ -19,7 +19,7 @@ if ( !defined( 'WPINC' ) ) {
                 ?>
             </h1>
         <?php endif; ?>
-        <?php if ( get_theme_mod( 'minimalistflex_layout_search_form', 'yes' ) == 'yes' ): ?>
+        <?php if ( get_theme_mod( 'minimalistflex_layout_search_form', 'yes' ) === 'yes' ): ?>
             <div class="search-form panel">
                 <p>
                     <?php esc_html_e( 'Not finding what you are looking at? You may refine your search below:', 'minimalistflex' ) ?>
@@ -32,7 +32,7 @@ if ( !defined( 'WPINC' ) ) {
     <?php the_posts_pagination(); ?>
 <?php else: ?>
     <div class="minimalistflex-search">
-        <?php if ( get_theme_mod( 'minimalistflex_layout_search_title', 'yes' ) == 'yes' ): ?>
+        <?php if ( get_theme_mod( 'minimalistflex_layout_search_title', 'yes' ) === 'yes' ): ?>
             <h1 class="search-title panel">
                 <?php
                     printf(
@@ -43,7 +43,7 @@ if ( !defined( 'WPINC' ) ) {
                 ?>
             </h1>
         <?php endif; ?>
-        <?php if ( get_theme_mod( 'minimalistflex_layout_search_form', 'yes' ) == 'yes' ): ?>
+        <?php if ( get_theme_mod( 'minimalistflex_layout_search_form', 'yes' ) === 'yes' ): ?>
             <div class="search-form panel">
                 <p>
                     <?php esc_html_e( 'We are unable to find anything with this query. Try refine your search below:', 'minimalistflex' ) ?>

@@ -25,7 +25,7 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
                 <?php the_post_thumbnail( 'large' ); ?>
             </a>
         <?php elseif ( ( $default_images[0] <> '' || minimalistflex_get_first_image() ) && $default_image_location <> 'no' && $default_image_location <> 'single' ): ?>
-            <?php if ( get_theme_mod( 'minimalistflex_default_featured_images_first_image', 'yes' ) == 'yes' && minimalistflex_get_first_image() ): ?>
+            <?php if ( get_theme_mod( 'minimalistflex_default_featured_images_first_image', 'yes' ) === 'yes' && minimalistflex_get_first_image() ): ?>
                 <?php $imgsrc = minimalistflex_get_first_image(); ?>
             <?php else: ?>
                 <?php
@@ -49,7 +49,7 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
             </a>
         <?php endif; ?>
         <div class="panel-content">
-            <?php if ( get_theme_mod( 'minimalistflex_interface_comment_count', 'yes' ) == 'yes' ): ?>
+            <?php if ( get_theme_mod( 'minimalistflex_interface_comment_count', 'yes' ) === 'yes' ): ?>
                 <div class="panel-comment-count">
                     <?php
                         printf(
@@ -73,7 +73,7 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
                 ) ); ?>
             </div>
             <div class="panel-meta">
-                <?php if ( get_theme_mod( 'minimalistflex_interface_publisher', 'yes' ) == 'yes' ): ?>
+                <?php if ( get_theme_mod( 'minimalistflex_interface_publisher', 'yes' ) === 'yes' ): ?>
                     <a class="panel-author" href="<?php echo esc_url( get_author_posts_url($id) ) ?>">
                         <span aria-hidden="true"><?php echo get_avatar( $id, 80 ) ?></span>
                         <?php the_author() ?>
@@ -82,7 +82,7 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
                 <?php $datemode = get_theme_mod( 'minimalistflex_interface_date', 'modify' ); ?>
                 <?php if ( $datemode <> 'no' ): ?>
                     <div class="panel-author">
-                        <?php if ( $datemode == 'publish' || get_the_modified_date() <> get_the_date() ): ?>
+                        <?php if ( $datemode === 'publish' || get_the_modified_date() <> get_the_date() ): ?>
                             <?php printf(
                                 /* translators: %s: Post publish time. */
                                 __( 'Published on %s', 'minimalistflex' ),

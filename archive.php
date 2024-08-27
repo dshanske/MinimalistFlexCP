@@ -8,7 +8,7 @@ if ( !defined( 'WPINC' ) ) {
 
 <?php if ( have_posts() ) : ?>
     <div class="minimalistflex-archive">
-        <?php if ( get_theme_mod( 'minimalistflex_layout_archive_title', 'yes' ) == 'yes' ): ?>
+        <?php if ( get_theme_mod( 'minimalistflex_layout_archive_title', 'yes' ) === 'yes' ): ?>
             <h1 class="archive-title panel">
                 <?php the_archive_title() ?>
             </h1>

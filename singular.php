@@ -21,7 +21,7 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
                 <?php the_post_thumbnail( 'large' ); ?>
             </div>
         <?php elseif ( ( $default_images[0] <> '' || minimalistflex_get_first_image() ) && $default_image_location <> 'no' && $default_image_location <> 'archive' ): ?>
-            <?php if ( get_theme_mod( 'minimalistflex_default_featured_images_first_image', 'yes' ) == 'yes' && minimalistflex_get_first_image() ): ?>
+            <?php if ( get_theme_mod( 'minimalistflex_default_featured_images_first_image', 'yes' ) === 'yes' && minimalistflex_get_first_image() ): ?>
                 <?php $imgsrc = minimalistflex_get_first_image(); ?>
             <?php else: ?>
                 <?php
