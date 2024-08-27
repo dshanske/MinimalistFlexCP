@@ -2,19 +2,20 @@
 # This file is distributed under the GNU General Public License v3.0 or later.
 # SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
 # SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
+# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
 msgid ""
 msgstr ""
 "Project-Id-Version: MinimalistFlex 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/minimalistflex\n"
-"POT-Creation-Date: 2024-08-19T23:54:44+00:00\n"
-"PO-Revision-Date: 2024-08-20 07:55+0800\n"
+"POT-Creation-Date: 2024-08-27T09:45:00+00:00\n"
+"PO-Revision-Date: 2024-08-27 17:46+0800\n"
 "Last-Translator: 枫原万叶 <hufang2007@icloud.com>\n"
 "Language-Team: Chinese <kde-i18n-doc@kde.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 24.08.0\n"
 "X-Domain: crystal\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
@@ -22,6 +23,11 @@ msgstr ""
 #: style.css
 msgid "MinimalistFlex"
 msgstr "MinimalistFlex"
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/onmyodev/MinimalistFlex/"
+msgstr "https://github.com/onmyodev/MinimalistFlex/"
 
 #. Description of the theme
 #: style.css
@@ -124,72 +130,48 @@ msgstr "返回页首"
 msgid "Theme <a href=\"%s\">MinimalistFlex</a>."
 msgstr "<a href=\"%s\">MinimalistFlex</a> 主题。"
 
-#: functions.php:59
-msgctxt "sidebar name"
-msgid "Menu"
-msgstr "菜单"
-
-#: functions.php:61
-msgid ""
-"Widgets in this area will be shown at the right in the main navigation menu "
-"dropdown."
-msgstr "在此区域中的小工具将会显示在导航菜单下拉菜单的右侧。"
-
-#: functions.php:68
-msgctxt "sidebar name"
-msgid "Menu 2"
-msgstr "菜单 2"
-
-#: functions.php:70
-msgid ""
-"Widgets in this area will be shown at the middle in the main navigation menu "
-"dropdown. Will be hidden when submenu items were shown."
-msgstr ""
-"在此区域中的小工具将会显示在导航菜单下拉菜单的中间。当显示子菜单项时会自动隐"
-"藏。"
-
-#: functions.php:77
+#: functions.php:66
 msgctxt "sidebar name"
 msgid "Main Sidebar"
 msgstr "主要侧栏"
 
-#: functions.php:79
+#: functions.php:68
 msgid "Widgets in this area will be shown on all posts and pages."
 msgstr "在此区域中的小工具将会显示在所有的文章和页面中。"
 
-#: functions.php:86
+#: functions.php:75
 msgctxt "sidebar name"
 msgid "Above Content"
 msgstr "主要内容上方"
 
-#: functions.php:88
+#: functions.php:77
 msgid "Widgets in this area will be shown above the main content."
 msgstr "在此区域中的小工具将会显示在主要内容的上方。"
 
-#: functions.php:95
+#: functions.php:84
 msgctxt "sidebar name"
 msgid "Below Content"
 msgstr "主要内容下方"
 
-#: functions.php:97
+#: functions.php:86
 msgid "Widgets in this area will be shown below the main content."
 msgstr "在此区域中的小工具将会显示在主要内容的下方。"
 
-#: functions.php:104
+#: functions.php:93
 msgctxt "sidebar name"
 msgid "Footer"
 msgstr "页脚"
 
-#: functions.php:106
+#: functions.php:95
 msgid "Widgets in this area will be shown in the footer. Always shows."
 msgstr "在此区域中的小工具将会显示在页脚中。此小工具区域始终显示。"
 
-#: functions.php:113
+#: functions.php:102
 msgctxt "sidebar name"
 msgid "Footer 2"
 msgstr "页脚 2"
 
-#: functions.php:115
+#: functions.php:104
 msgid ""
 "Widgets in this area will be shown in the footer to construct a multi column "
 "footer. Only shows when the footer is set to display it. Also twice as wide "
@@ -198,12 +180,12 @@ msgstr ""
 "在此区域中的小工具将会在页脚中显示，以形成多栏布局。仅当被设置为显示时才会显"
 "示。宽度为其它页脚小工具区域的两倍。"
 
-#: functions.php:122
+#: functions.php:111
 msgctxt "sidebar name"
 msgid "Footer 3"
 msgstr "页脚 3"
 
-#: functions.php:124
+#: functions.php:113
 msgid ""
 "Widgets in this area will be shown in the footer to construct a multi column "
 "footer. Only shows when the footer is set to display it."
@@ -211,7 +193,7 @@ msgstr ""
 "在此区域中的小工具将会在页脚中显示，以形成多栏布局。仅当被设置为显示时才会显"
 "示。"
 
-#: functions.php:136
+#: functions.php:125
 msgid "Main Menu"
 msgstr "主菜单"
 
@@ -235,11 +217,6 @@ msgstr "页眉图片。"
 #: header.php:93
 msgid "Toggle navigation dropdown"
 msgstr "展开或收起导航菜单下拉菜单"
-
-#: header.php:105
-msgid ""
-"Here goes the \"Menu 2\" widget area. This text does not trigger anything."
-msgstr "以下是「菜单 2」小工具中的小工具。此文本并不会链接到任何内容。"
 
 #: includes/class-color-palette-control.php:35
 msgctxt "color palette"
@@ -312,7 +289,7 @@ msgstr "强调色 B"
 
 #: includes/color-definitions.php:37
 msgid "Tint C"
-msgstr "强调色 A"
+msgstr "强调色 C"
 
 #: includes/color-definitions.php:38
 msgid "Contrast (Light)"
@@ -339,8 +316,8 @@ msgid "Navigation Menu Background"
 msgstr "导航菜单背景"
 
 #: includes/color-definitions.php:44
-msgid "Navigation Menu Sidebar Background"
-msgstr "导航菜单侧边栏背景"
+msgid "Navigation Menu Submenu Background"
+msgstr "导航菜单子菜单背景"
 
 #: includes/color-definitions.php:45
 msgid "Navigation Menu"
@@ -411,8 +388,8 @@ msgid "The background color of the navigation menu dropdown."
 msgstr "导航菜单下拉菜单的背景色。"
 
 #: includes/color-definitions.php:65
-msgid "The background color of the sidebar of the navigation menu dropdown."
-msgstr "导航菜单下拉菜单的侧边栏的背景颜色。"
+msgid "The background color of the submenus of the navigation menu dropdown."
+msgstr "导航菜单下拉菜单的子菜单的背景颜色。"
 
 #: includes/color-definitions.php:66
 msgid "The text color of the navigation menu dropdown."
@@ -998,10 +975,6 @@ msgstr "已显示一些默认的小工具。"
 msgid "Archives"
 msgstr "归档页"
 
-#: sidebar.php:33
-msgid "Meta"
-msgstr "快速链接"
-
 #: singular.php:33 templates/loop.php:42
 msgid ""
 "The thumbnail image. This is a default image so that it's purely decorative."
@@ -1094,4 +1067,3 @@ msgstr "MinimalistFlex 暗背景色"
 msgctxt "Color name"
 msgid "MinimalistFlex White"
 msgstr "MinimalistFlex 白色"
-
