@@ -75,7 +75,7 @@ jQuery(document).ready(function($){
         wp.customize("header_textcolor").set("#ffffff")
         wp.customize("minimalistflex_color_header-text").set("#ffffff")
         wp.customize("minimalistflex_color_header-menu").set("#3e2555")
-        wp.customize("minimalistflex_color_header-sidebar").set("#663196")
+        wp.customize("minimalistflex_color_header-sidebar").set("#4f2675")
         wp.customize("minimalistflex_color_level1").set("#e7d2fa")
         wp.customize("minimalistflex_color_level2").set("#d9c4f2")
         wp.customize("minimalistflex_color_tint").set("#e7d2fa")
