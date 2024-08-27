@@ -501,6 +501,7 @@ table tbody tr:nth-child(2n) {
     display: block;
     text-decoration: none;
     width: 100%;
+    line-height: 0;
     height: var(--minimalistflex-max-height);
     box-shadow: var(--minimalistflex-card-shadow);
     border-radius: 2px;
