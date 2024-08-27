@@ -63,24 +63,6 @@ add_action( 'wp_head', 'minimalistflex_enqueue_files' );
 
 function minimalistflex_widgets_init() {
 	register_sidebar( array(
-		'name'          => _x( 'Menu', 'sidebar name' , 'minimalistflex' ),
-		'id'            => 'menu',
-		'description'   => __( 'Widgets in this area will be shown at the right in the main navigation menu dropdown.', 'minimalistflex' ),
-		'before_widget' => '<li id="%1$s" class="panel widget menu-widget %2$s">',
-		'after_widget'  => '</li>',
-		'before_title'  => '<h2 class="panel-title widget-title menu-widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
-		'name'          => _x( 'Menu 2', 'sidebar name' , 'minimalistflex' ),
-		'id'            => 'menu-2',
-		'description'   => __( 'Widgets in this area will be shown at the middle in the main navigation menu dropdown. Will be hidden when submenu items were shown.', 'minimalistflex' ),
-		'before_widget' => '<li id="%1$s" class="panel widget menu-2-widget %2$s">',
-		'after_widget'  => '</li>',
-		'before_title'  => '<h2 class="panel-title widget-title menu-2-widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
 		'name'          => _x( 'Main Sidebar', 'sidebar name' , 'minimalistflex' ),
 		'id'            => 'main-sidebar',
 		'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'minimalistflex' ),
