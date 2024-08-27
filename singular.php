@@ -30,7 +30,13 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
                 ?>
             <?php endif; ?>
             <div class="singular-image">
-                <img src="<?php echo esc_url( $imgsrc ) ?>" aria-label="<?php esc_attr_e( 'The thumbnail image. This is a default image so that it\'s purely decorative.', 'minimalistflex' ) ?>">
+                <img src="<?php echo esc_url( $imgsrc ) ?>" aria-label="<?php
+                    printf(
+                        /* translators: %s: Title of the post. */
+                        esc_attr__( 'The thumbnail image for %s.', 'minimalistflex' ),
+                        get_the_title()
+                    )
+                ?>">
             </div>
         <?php endif; ?>
         <div class="singular-main">
@@ -39,7 +45,7 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
             <div class="panel-main">
                 <?php the_content(); ?>
                 <?php wp_link_pages( Array(
-                    'before' => '<p class="panel post-nav-links"><span class="post-nav-links-indicator">' . __('Pages: ', 'minimalistflex') . '</span>'
+                    'before' => '<p class="panel post-nav-links"><span class="post-nav-links-indicator">' . __( 'Pages: ', 'minimalistflex' ) . '</span>'
                 ) ); ?>
             </div>
             <?php get_sidebar( 'below-content' ) ?>
