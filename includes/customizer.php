@@ -470,7 +470,7 @@ function minimalistflex_customize_register( $wp_customize ) {
         'type' => 'theme_mod',
         'capability' => 'edit_theme_options',
         'transport' => 'refresh',
-        'sanitize_callback' => 'wp_filter_post_kses'
+        'sanitize_callback' => 'wp_kses_data'
     ) );
     $wp_customize -> add_setting( 'minimalistflex_footer_widget_layout', Array(
         'type' => 'theme_mod',

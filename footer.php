@@ -34,13 +34,12 @@ if( is_home() ) {
 
 </main>
 
-<ul class="minimalistflex-controls">
-    <?php if ( get_theme_mod( 'minimalistflex_interface_scroll_top', 'yes' ) === 'yes' ): ?>
-        <li><a href="#main-content" aria-label="<?php esc_attr_e( 'Back to top', 'minimalistflex' ) ?>">:D</a></li>
-    <?php endif; ?>
-</ul>
-
 <footer class="minimalistflex-footer">
+    <ul class="minimalistflex-controls">
+        <?php if ( get_theme_mod( 'minimalistflex_interface_scroll_top', 'yes' ) === 'yes' ): ?>
+            <li><a href="#" aria-label="<?php esc_attr_e( 'Back to top', 'minimalistflex' ) ?>">:D</a></li>
+        <?php endif; ?>
+    </ul>
     <div class="minimalistflex-footer-widgets-container">
         <?php $sidebars = get_theme_mod( 'minimalistflex_footer_widget_layout', 'one' ); ?>
         <?php
@@ -69,7 +68,7 @@ if( is_home() ) {
         <div class="footer-credits">
             <?php $footer_type = get_theme_mod( 'minimalistflex_footer_type', 'both' ); ?>
             <?php if ( $footer_type === 'both' || $footer_type === 'custom' ): ?>
-                <?php echo wp_filter_post_kses( get_theme_mod( 'minimalistflex_footer_text' ) ) ?>
+                <?php echo wp_kses_data( get_theme_mod( 'minimalistflex_footer_text' ) ) ?>
             <?php endif; ?>
             <?php if ( $footer_type === 'both' || $footer_type === 'minimalistflex' ): ?>
                 <?php
