@@ -19,7 +19,7 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
             <a class="panel-image" href="<?php the_permalink() ?>" aria-label="<?php
             printf(
                 /* translators: %s: Post title associated with the thumbnail image. */
-                __( 'Thumbnail image of %s. Also a link that navigates to it.', 'minimalistflex' ),
+                esc_attr__( 'Thumbnail image of %s. Also a link that navigates to it.', 'minimalistflex' ),
                 get_the_title()
             ) ?>">
                 <?php the_post_thumbnail( 'large' ); ?>
@@ -91,18 +91,14 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>
-                <a class="panel panel-link" href="<?php the_permalink(); ?>">
-                    <span aria-hidden="true">
-                        <?php echo esc_html( get_theme_mod( 'minimalistflex_interface_readlink', __( 'Read More', 'minimalistflex' ) ) ); ?>
-                    </span>
-                    <span class="screen-reader-text">
-                        <?php
+                <a class="panel panel-link" href="<?php the_permalink(); ?>" aria-label="<?php
                         printf(
                             /* translators: %s: Post title. */
                             __( 'Read more of %s', 'minimalistflex' ),
                             get_the_title()
-                        ) ?>
-                    </span>
+                        )
+                    ?>">
+                    <?php echo esc_html( get_theme_mod( 'minimalistflex_interface_readlink', __( 'Read More', 'minimalistflex' ) ) ); ?>
                 </a>
             </div>
         </div>
