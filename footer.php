@@ -69,7 +69,7 @@ if( is_home() ) {
         <div class="footer-credits">
             <?php $footer_type = get_theme_mod( 'minimalistflex_footer_type', 'both' ); ?>
             <?php if ( $footer_type == 'both' || $footer_type == 'custom' ): ?>
-                <?php echo wp_kses_data( get_theme_mod( 'minimalistflex_footer_text' ) ) ?>
+                <?php echo wp_filter_post_kses( get_theme_mod( 'minimalistflex_footer_text' ) ) ?>
             <?php endif; ?>
             <?php if ( $footer_type == 'both' || $footer_type == 'minimalistflex' ): ?>
                 <?php
