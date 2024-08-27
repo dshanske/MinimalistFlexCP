@@ -30,7 +30,7 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
                 ?>
             <?php endif; ?>
             <div class="singular-image">
-                <img src="<?php echo esc_attr( $imgsrc ) ?>" aria-label="<?php esc_attr_e( 'The thumbnail image. This is a default image so that it\'s purely decorative.', 'minimalistflex' ) ?>">
+                <img src="<?php echo esc_url( $imgsrc ) ?>" aria-label="<?php esc_attr_e( 'The thumbnail image. This is a default image so that it\'s purely decorative.', 'minimalistflex' ) ?>">
             </div>
         <?php endif; ?>
         <div class="singular-main">

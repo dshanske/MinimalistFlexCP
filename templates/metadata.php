@@ -13,7 +13,7 @@ if ( !defined( 'WPINC' ) ) {
             </div>
             <?php foreach( $tags as $tag ) { ?>
                 <div class="singular-category">
-                    <a href="<?php echo esc_attr( get_category_link( $tag ) ) ?>">
+                    <a href="<?php echo esc_url( get_category_link( $tag ) ) ?>">
                         <?php echo $tag->name; ?>
                     </a>
                 </div>
@@ -28,7 +28,7 @@ if ( !defined( 'WPINC' ) ) {
         </div>
         <?php foreach( $tags as $tag ) { ?>
             <div class="singular-category singular-tag">
-                <a href="<?php echo esc_attr( get_tag_link( $tag ) ) ?>">
+                <a href="<?php echo esc_url( get_tag_link( $tag ) ) ?>">
                     <?php echo $tag->name; ?>
                 </a>
             </div>

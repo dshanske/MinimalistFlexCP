@@ -51,7 +51,7 @@ class MinimalistFlex_Multi_Image_Custom_Control extends WP_Customize_Control
         <div>
             <ul class='suggested-images'>
                 <?php foreach ( $this->suggest_images as $suggest_image ): ?>
-                    <li class="suggested-image-item"><img src="<?php echo esc_attr( get_template_directory_uri() . $suggest_image ) ?>"></li>
+                    <li class="suggested-image-item"><img src="<?php echo esc_url( get_template_directory_uri() . $suggest_image ) ?>"></li>
                 <?php endforeach; ?>
             </ul>
         </div>

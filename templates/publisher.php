@@ -6,7 +6,7 @@ if ( !defined( 'WPINC' ) ) {
 
 <div class="publisher">
 
-<a class="publisher-link" href="<?php echo esc_attr( get_author_posts_url($id) ) ?>">
+<a class="publisher-link" href="<?php echo esc_url( get_author_posts_url($id) ) ?>">
     <?php echo get_avatar( $id, 32 ) ?>
     <span><?php the_author() ?></span>
 </a>

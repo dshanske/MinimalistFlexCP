@@ -68,7 +68,7 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
             </div>
             <div class="panel-meta">
                 <?php if ( get_theme_mod( 'minimalistflex_interface_publisher', 'yes' ) == 'yes' ): ?>
-                    <a class="panel-author" href="<?php echo esc_attr( get_author_posts_url($id) ) ?>">
+                    <a class="panel-author" href="<?php echo esc_url( get_author_posts_url($id) ) ?>">
                         <span aria-hidden="true"><?php echo get_avatar( $id, 80 ) ?></span>
                         <?php the_author() ?>
                     </a>
