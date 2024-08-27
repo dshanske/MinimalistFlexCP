@@ -36,7 +36,7 @@ if ( !defined( 'WPINC' ) ) {
     --minimalistflex-shadow-light: transparent;
     <?php else: ?>
     --minimalistflex-shadow: rgba(0, 0, 0, 0.19);
-    --minimalistflex-shadow-light: rgba(200, 200, 200, 0.19);
+    --minimalistflex-shadow-light: rgba(0, 0, 0, 0.05);
     <?php endif; ?>
 }
 
