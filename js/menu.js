@@ -7,4 +7,12 @@ jQuery(document).ready(function($){
         e.preventDefault()
     })
     $("body").removeClass("loading")
+    $(".menu-item-has-children").click(function(e){
+        e.preventDefault()
+        $(this).toggleClass("active")
+        $(this).parent().parent().toggleClass("active")
+    })
+    $("#minimalistflex-menu-focus-hack").focus(function(){
+        $("#menu-toggle").focus()
+    })
 })

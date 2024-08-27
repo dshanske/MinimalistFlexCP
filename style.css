@@ -136,6 +136,11 @@ input {
     border-radius: none;
 }
 
+input[type=submit]:focus,
+button:focus {
+    text-decoration: underline;
+}
+
 .minimalistflex-master a,
 .minimalistflex-master a * {
     color: var(--minimalistflex-link);
@@ -211,7 +216,7 @@ table thead,
 table tbody tr:nth-child(2n) {
     background-color: color-mix(
         in srgb,
-        var(--minimalistflex-level3),
+        #f0f0f0,
         transparent 25%
     )
 }
@@ -238,8 +243,7 @@ table tbody tr:nth-child(2n) {
     position: sticky;
     top: var(--minimalistflex-admin);
     z-index: 200;
-    width: 100%;
-    padding: 0;
+    padding: 1em;
     margin: 0;
     background-color: var(--minimalistflex-header-bg);
     display: flex;
@@ -296,10 +300,10 @@ table tbody tr:nth-child(2n) {
 
 #menu-toggle {
     box-sizing: content-box;
-    display: block;
-    width: 25px;
-    height: 25px;
-    padding: 25px;
+    display: none;
+    width: 20px;
+    height: 20px;
+    padding: 20px;
     margin: 0;
     position: relative;
     text-decoration: none;
@@ -308,11 +312,11 @@ table tbody tr:nth-child(2n) {
 }
 
 #menu-toggle-icon {
-    display: inline-block;
+    display: block;
     position: absolute;
-    top: 36.5px;
-    left: 25px;
-    width: 25px;
+    top: 30px;
+    left: 20px;
+    width: 20px;
     height: 2px;
     background-color: var(--minimalistflex-header);
     transition-property: transform;
@@ -323,7 +327,7 @@ table tbody tr:nth-child(2n) {
 #menu-toggle-icon:after {
     content: '';
     display: block;
-    width: 25px;
+    width: 20px;
     height: 2px;
     position: absolute;
     background: var(--minimalistflex-header);
@@ -332,176 +336,109 @@ table tbody tr:nth-child(2n) {
 }
 
 #menu-toggle-icon:before {
-    margin-top: -10px;
+    margin-top: -0.5em;
 }
 
 #menu-toggle-icon:after {
-    margin-top: 10px;
+    margin-top: 0.5em;
 }
 
-.minimalistflex-menu-container {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 0;
-    height: calc(100vh - 75px);
-    width: 100%;
-    background-color: var(--minimalistflex-header-menu);
-    color: var(--minimalistflex-default);
-    transform: translateX(100vw);
-    transition: transform .5s;
+#minimalistflex-menu-focus-hack {
+    display: none;
 }
 
-.minimalistflex-menu {
+.minimalistflex-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
 }
 
-.minimalistflex-menu-container:focus,
-.minimalistflex-menu-container:focus-within {
-    transition: none;
+.minimalistflex-menu li {
+    padding: 1em;
+    position: relative;
 }
 
-.minimalistflex-menu-container:focus,
-.minimalistflex-menu-container:focus-within,
-.active > .minimalistflex-menu-container {
-    transform: translateX(0);
-}
-
-.minimalistflex-menu {
-    width: 100%;
-}
-
-.minimalistflex-menu > div:first-child {
-    width: 67%;
-    height: 100vh;
-}
-
-.minimalistflex-menu > div:first-child > div {
-    height: 100%;
-}
-
-a[id*=minimalistflex-menu-goto-] {
-    display: none;
-}
-
-.menu {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-}
-
-.menu a {
-    display: block;
-    padding: 2em;
+.minimalistflex-menu li a {
     text-decoration: none;
-    transition: background-color 250ms;
+    font-weight: bold;
 }
 
-.menu-item > a:focus,
-.sub-menu > .menu-item > a:hover,
-.menu > .menu-item:hover > a {
-    background-color: var(--minimalistflex-shadow-light);
+.minimalistflex-menu li a:focus,
+.minimalistflex-menu li a:hover {
+    text-decoration: underline;
 }
 
-.menu-item {
-    width: 50%;
-    position: relative;
-}
-
-.sub-menu {
+.minimalistflex-menu .sub-menu {
+    display: none;
     position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--minimalistflex-header-bg);
+    border-radius: 2px;
+    width: 200px;
+}
+
+.minimalistflex-menu .sub-menu .sub-menu {
     top: 0;
-    left: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    height: 0;
-    list-style-type: none;
-    z-index: 75;
+    left: auto;
+    right: 100%;
 }
 
-.menu > .menu-item > .sub-menu {
-    overflow: auto;
-}
-
-.menu > .menu-item > .sub-menu > .menu-item:last-child {
-    padding-bottom: 115px;
-}
-
-.sub-menu .menu-item {
-    width: 100%;
-}
-
-a:focus + .sub-menu,
-.sub-menu:has(a:focus),
-.menu-item:hover > .sub-menu {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.menu-item > .sub-menu .sub-menu {
-    position: relative;
+.minimalistflex-menu .sub-menu .sub-menu::before {
+    content: "";
+    display: block;
+    background-color: transparent;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    filter: brightness(90%);
-}
-
-.menu-custom {
-    width: 33%;
-    height: calc(100vh - 75px);
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    background-color: var(--minimalistflex-header-sidebar);
-    box-shadow: var(--minimalistflex-inset-shadow-light);
-    overflow: auto;
-}
-
-.menu-widgets {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.custom-menu-2 {
-    position: absolute;
-    width: 33%;
+    width: 2em;
     height: 100%;
-    top: 0;
-    left: calc(33% + 1em);
-    overflow: auto;
 }
 
-.menu-2-widgets {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    padding-bottom: 4em;
+.minimalistflex-menu .menu-item-has-children {
+    padding-right: 2em;
 }
 
-div + .menu-2-widgets {
-    width: 33%;
+.minimalistflex-menu .menu-item-has-children::before,
+.minimalistflex-menu .menu-item-has-children::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 1em;
+    width: 8px;
+    height: 2px;
+    transform-origin: 100%;
+    background-color: var(--minimalistflex-default);
 }
 
-.menu-2-widget {
-    padding: 1em;
+.minimalistflex-menu .menu-item-has-children::before {
+    transform: rotate(45deg);
 }
 
-.minimalistflex-menu > div:has(.menu-item-has-children:focus-within) + .custom-menu-2 > .custom-menu-2-menu,
-.minimalistflex-menu > div:has(.menu-item-has-children:hover) + .custom-menu-2 > .custom-menu-2-menu {
-    display: none;
+.minimalistflex-menu .menu-item-has-children:hover::before,
+.minimalistflex-menu .menu-item-has-children:focus-within::before {
+    top: 21px;
+    transform: rotate(-45deg);
+}
+
+.minimalistflex-menu .menu-item-has-children::after {
+    right: calc(1em + 1px);
+    transform: rotate(135deg);
+}
+
+.minimalistflex-menu .menu-item-has-children:hover::after,
+.minimalistflex-menu .menu-item-has-children:focus-within::after {
+    top: 21px;
+    transform: rotate(-135deg);
+}
+
+.minimalistflex-menu .menu-item-has-children:hover > .sub-menu,
+.minimalistflex-menu .menu-item-has-children:focus-within > .sub-menu {
+    display: block;
 }
 
 /*
@@ -659,6 +596,7 @@ a.panel-author:focus {
     height: 1px;
     background-color: var(--minimalistflex-link-hover);
     transform-origin: 100%;
+    transition: opacity 250ms;
 }
 
 .panel-link::before {
@@ -1521,30 +1459,6 @@ a img.alignwide {
         width: 100%;
     }
 
-    .menu-custom {
-        width: 100%;
-        top: var(--minimalistflex-admin);
-    }
-
-    .minimalistflex-menu-container {
-        width: 100%;
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-    }
-
-    .minimalistflex-menu > div:first-child {
-        width: 100%;
-        height: calc(100vh - 75px);
-    }
-
-    .minimalistflex-menu > div:first-child > div {
-        width: 50%;
-    }
-
-    .minimalistflex-menu {
-        width: 200%;
-    }
-
     .publisher,
     .author-details {
         flex-wrap: wrap;
@@ -1552,102 +1466,6 @@ a img.alignwide {
 
     .author-detail {
         width: 90%;
-    }
-
-    .custom-menu-2 {
-        left: calc(50% + 1em);
-        width: calc(50% - 1em);
-    }
-
-    .custom-menu-2-menu {
-        width: 100%;
-        display: block !important;
-    }
-
-    .menu-2-widgets > *:last-child {
-        padding-bottom: 75px;
-    }
-
-    .minimalistflex-menu ul {
-        list-style-type: none;
-        padding: 0;
-        width: 100%;
-    }
-    
-    .minimalistflex-menu li {
-        font-size: 16px;
-        padding: 0.5em;
-    }
-    
-    .minimalistflex-menu .menu-item {
-        display: block;
-        width: auto;
-    }
-
-    .minimalistflex-menu > div:first-child > ul.menu > .menu-item:last-child {
-        padding-bottom: 75px !important;
-    }
-    
-    .minimalistflex-menu .menu-item a {
-        background-color: transparent !important;
-    }
-    
-    .minimalistflex-menu .menu-item a:focus,
-    .minimalistflex-menu .menu-item a:hover {
-        text-decoration: solid underline;
-    }
-    
-    .minimalistflex-menu .sub-menu {
-        position: relative !important;
-        top: 0;
-        left: 0;
-        height: auto !important;
-        display: block !important;
-        width: auto !important;
-        padding: 0;
-        margin-left: 5px;
-    }
-    
-    .minimalistflex-menu .sub-menu > .menu-item:last-child {
-        display: block !important;
-        padding-bottom: 0 !important;
-    }
-
-    a[id*=minimalistflex-menu-goto-] {
-        font-size: 18px;
-        box-sizing: content-box;
-        border: none;
-        border-radius: 0;
-        background-color: var(--minimalistflex-level1);
-        color: var(--minimalistflex-default);
-        position: absolute;
-        width: 2em;
-        height: 2em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: calc(50% - 1em);
-        box-shadow: var(--minimalistflex-card-shadow);
-        text-decoration: none;
-        font-weight: bold;
-        transition: background-color 250ms, color 250ms;
-    }
-
-    a[id*=minimalistflex-menu-goto-]:hover {
-        background-color: var(--minimalistflex-tint-contrast);
-        color: var(--minimalistflex-contrast-dark);
-    }
-
-    #minimalistflex-menu-goto-left {
-        right: -3em;
-    }
-
-    #minimalistflex-menu-goto-right {
-        right: 1em;
-    }
-
-    .minimalistflex-header:not(.active) a[id*=minimalistflex-menu-goto-] {
-        display: none !important;
     }
 
     .singular-main {
@@ -1661,10 +1479,90 @@ a img.alignwide {
     .minimalistflex-footer-widgets-container > * {
         width: 100%;
     }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .minimalistflex-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--minimalistflex-level2);
+    }
+
+    .active .minimalistflex-menu {
+        display: block;
+        z-index: 300;
+        overflow-y: auto;
+    }
+
+    #minimalistflex-menu-focus-hack {
+        display: inline;
+    }
+
+    .minimalistflex-menu ul {
+        flex-direction: column;
+    }
+
+    .minimalistflex-menu .menu-item-has-children:hover > .sub-menu {
+        display: none;
+    }
+
+    .minimalistflex-menu .menu-item-has-children:focus-within > .sub-menu,
+    .minimalistflex-menu .menu-item-has-children.active > .sub-menu {
+        display: block;
+    }
+
+    .minimalistflex-menu .sub-menu,
+    .minimalistflex-menu .sub-menu .sub-menu {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        margin: 1em 0 0 -1em;
+        width: calc(100% + 3em);
+        background-color: var(--minimalistflex-header-sidebar);
+    }
+
+    .minimalistflex-menu .menu-item-has-children::before,
+    .minimalistflex-menu .menu-item-has-children::after {
+        right: 2em;
+    }
+
+    .minimalistflex-menu .menu-item-has-children:hover::before {
+        top: 28px;
+        transform: rotate(45deg);
+    }
+
+    .minimalistflex-menu .menu-item-has-children:hover::after {
+        top: 28px;
+        transform: rotate(135deg);
+    }
+
+    .minimalistflex-menu .menu-item-has-children.active::before {
+        top: 21px;
+        transform: rotate(-45deg);
+    }
+
+    .minimalistflex-menu .menu-item-has-children.active::after {
+        top: 21px;
+        transform: rotate(-135deg);
+    }
+
 }
 
 @media screen and ( max-width: 600px ) {
     .singular-main {
         width: calc(100% - 4em);
+    }
+}
+
+@media ( prefers-reduced-motion: reduce ) {
+    * {
+        transition: none !important;
     }
 }

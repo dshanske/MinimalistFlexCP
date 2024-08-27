@@ -79,7 +79,7 @@ $label = get_theme_mod( 'minimalistflex_header_label' );
     </header>
 <?php endif; ?>
 
-<nav class="minimalistflex-header">
+<header class="minimalistflex-header">
     <?php if ( has_custom_logo() ): ?>
         <?php echo get_custom_logo(); ?>
     <?php endif; ?>
@@ -89,32 +89,20 @@ $label = get_theme_mod( 'minimalistflex_header_label' );
         </h1>
     <?php endif; ?>
     <div class="spacer"></div>
-    <?php if ( has_nav_menu( 'main-menu' ) || is_active_sidebar( 'menu' ) || is_active_sidebar( 'menu-2' ) ): ?>
+    <?php if ( has_nav_menu( 'main-menu' ) ): ?>
         <button id="menu-toggle" aria-label="<?php esc_attr_e( 'Toggle navigation dropdown', 'minimalistflex' ) ?>">
             <i id="menu-toggle-icon"></i>
         </button>
-    <?php endif; ?>
-    <div class="minimalistflex-menu-container">
-        <div class="minimalistflex-menu">
+        <nav class="minimalistflex-menu">
             <?php if ( has_nav_menu( 'main-menu' ) ): ?>
                 <div id="minimalistflex-menu-nav-menu">
                     <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+                    <a id="minimalistflex-menu-focus-hack" href="#minimalistflex-menu-focus-hack" aria-label="<?php esc_attr_e( 'This element sends you back to the close menu button.', 'crystal' ) ?>"></a>
                 </div>
             <?php endif; ?>
-            <div class="custom-menu-2" id="custom-menu-2">
-                <a id="custom-menu-2-focus" href="#" aria-label="<?php esc_attr_e( 'Here goes the "Menu 2" widget area. This text does not trigger anything.', 'minimalistflex' ) ?>"></a>
-                <div class="custom-menu-2-menu">
-                    <?php get_sidebar( 'menu-2' ) ?>
-                </div>
-            </div>
-            <?php if ( is_active_sidebar( 'menu' ) || user_can( get_current_user_id(), 'edit_theme_options' ) ): ?>
-                <div class="menu-custom" id="menu-custom">
-                    <?php get_sidebar( 'menu' ) ?>
-                </div>
-            <?php endif; ?>
-        </div>
-    </div>
-</nav>
+        </nav>
+    <?php endif; ?>
+</header>
 
 <main class="minimalistflex-master <?php echo 'minimalistflex-sidebar-layout-' . $sidebar ?>">
 
