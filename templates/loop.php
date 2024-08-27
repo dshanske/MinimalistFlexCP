@@ -36,10 +36,16 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
             <a class="panel-image" href="<?php the_permalink() ?>" aria-label="<?php
             printf(
                 /* translators: %s: Post title associated with the thumbnail image. */
-                __( 'Thumbnail image of %s. Also a link that navigates to it.', 'minimalistflex' ),
+                esc_attr__( 'The thhumbnail image link for %s', 'minimalistflex' ),
                 get_the_title()
             ) ?>">
-                <img src="<?php echo esc_url( $imgsrc );?>" aria-label="<?php esc_attr_e( 'The thumbnail image. This is a default image so that it\'s purely decorative.', 'minimalistflex' ) ?>">
+                <img src="<?php echo esc_url( $imgsrc );?>" aria-label="<?php
+                    printf(
+                        /* translators: %s: Title of the post. */
+                        esc_attr__( 'The thumbnail image for %s.', 'minimalistflex' ),
+                        get_the_title()
+                    )
+                ?>">
             </a>
         <?php endif; ?>
         <div class="panel-content">
