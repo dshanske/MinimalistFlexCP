@@ -225,6 +225,19 @@ table tbody tr:nth-child(2n) {
     text-align: center;
 }
 
+a[target=_blank] {
+    margin-left: 1.5em;
+}
+
+a[target=_blank]::before {
+    content: "\f504";
+    font-family: "Dashicons";
+    display: inline-block;
+    position: absolute;
+    top: calc(1em + 3px);
+    left: 1em;
+}
+
 /*
  * Header styles.
  */
@@ -706,14 +719,11 @@ a.panel-author:focus {
 .author-detail {
     padding: 5%;
     width: 40%;
-    transition: box-shadow 250ms,
-                background-color 250ms;
+    transition: background-color 250ms;
 }
 
 .author-detail:focus,
 .author-detail:hover {
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1) inset,
-                -10px -10px 10px #fff inset;
     background-color: var(--minimalistflex-level2);
 }
 
