@@ -50,3 +50,7 @@ As a bonus, we have 4 pre-built color palettes for you.
 
 ### 1.0.0
 * Initial release.
+
+## Resources
+* screenshot.jpg, by Frank419, licensed under CC0 (https://creativecommons.org/publicdomain/zero/1.0/deed)
+* All images found in the /defaults folder, designed by Frank419 with Inkscape, licensed under CC0 (https://creativecommons.org/publicdomain/zero/1.0/deed)
