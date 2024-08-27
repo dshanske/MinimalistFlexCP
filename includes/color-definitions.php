@@ -41,7 +41,7 @@ $labels = Array(
     'footer-bg' => __( 'Footer Background', 'minimalistflex' ),
     'header-bg' => __( 'Header Background', 'minimalistflex' ),
     'header-menu' => __( 'Navigation Menu Background', 'minimalistflex' ),
-    'header-sidebar' => __( 'Navigation Menu Sidebar Background', 'minimalistflex' ),
+    'header-sidebar' => __( 'Navigation Menu Submenu Background', 'minimalistflex' ),
     'header-text' => __( 'Navigation Menu', 'minimalistflex' )
 );
 
@@ -62,6 +62,6 @@ $desciprtions = Array(
     'footer-bg' => __( 'The footer background color.', 'minimalistflex' ),
     'header-bg' => __( 'The background color of the header.', 'minimalistflex' ),
     'header-menu' => __( 'The background color of the navigation menu dropdown.', 'minimalistflex' ),
-    'header-sidebar' => __( 'The background color of the sidebar of the navigation menu dropdown.', 'minimalistflex' ),
+    'header-sidebar' => __( 'The background color of the submenus of the navigation menu dropdown.', 'minimalistflex' ),
     'header-text' => __( 'The text color of the navigation menu dropdown.', 'minimalistflex' )
 );
