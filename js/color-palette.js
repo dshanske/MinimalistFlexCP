@@ -1,6 +1,7 @@
 jQuery(document).ready(function($){
     $("#minimalistflex-palette-minimal").click(function(e){
         e.preventDefault()
+        wp.customize("minimalistflex_color_disable_shadow").set("yes")
         wp.customize("minimalistflex_color_default").set("#000000")
         wp.customize("minimalistflex_color_level3-dark").set("#666666")
         wp.customize("minimalistflex_color_link").set("#004774")
@@ -23,6 +24,7 @@ jQuery(document).ready(function($){
     })
     $("#minimalistflex-palette-light").click(function(e){
         e.preventDefault()
+        wp.customize("minimalistflex_color_disable_shadow").set("no")
         wp.customize("minimalistflex_color_default").set("#000000")
         wp.customize("minimalistflex_color_level3-dark").set("#666666")
         wp.customize("minimalistflex_color_link").set("#004774")
@@ -45,6 +47,7 @@ jQuery(document).ready(function($){
     })
     $("#minimalistflex-palette-dark").click(function(e){
         e.preventDefault()
+        wp.customize("minimalistflex_color_disable_shadow").set("no")
         wp.customize("minimalistflex_color_default").set("#ffffff")
         wp.customize("minimalistflex_color_level3-dark").set("#c0c0c0")
         wp.customize("minimalistflex_color_link").set("#00cbff")
@@ -67,6 +70,7 @@ jQuery(document).ready(function($){
     })
     $("#minimalistflex-palette-galatic").click(function(e){
         e.preventDefault()
+        wp.customize("minimalistflex_color_disable_shadow").set("no")
         wp.customize("minimalistflex_color_default").set("#000000")
         wp.customize("minimalistflex_color_level3-dark").set("#666666")
         wp.customize("minimalistflex_color_link").set("#3e2555")
@@ -78,7 +82,7 @@ jQuery(document).ready(function($){
         wp.customize("minimalistflex_color_header-sidebar").set("#4f2675")
         wp.customize("minimalistflex_color_level1").set("#e7d2fa")
         wp.customize("minimalistflex_color_level2").set("#d9c4f2")
-        wp.customize("minimalistflex_color_tint").set("#e7d2fa")
+        wp.customize("minimalistflex_color_tint").set("#d3a7f9")
         wp.customize("minimalistflex_color_tint-dark").set("#3e2555")
         wp.customize("minimalistflex_color_tint-alt").set("#20152a")
         wp.customize("minimalistflex_color_tint-contrast").set("#20152a")
@@ -89,6 +93,7 @@ jQuery(document).ready(function($){
     })
     $("#minimalistflex-palette-spring").click(function(e){
         e.preventDefault()
+        wp.customize("minimalistflex_color_disable_shadow").set("no")
         wp.customize("minimalistflex_color_default").set("#000000")
         wp.customize("minimalistflex_color_level3-dark").set("#666666")
         wp.customize("minimalistflex_color_link").set("#355c33")
