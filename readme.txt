@@ -1,5 +1,5 @@
 === MinimalistFlex ===
-Stable tag:        1.0.0
+Stable tag:        1.0.2
 Contributors:      frank419
 Tags:              two-columns ,left-sidebar, right-sidebar, custom-colors, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, sticky-post, theme-options, translation-ready, blog
 Tested up to:      6.6
