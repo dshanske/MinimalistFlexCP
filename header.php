@@ -89,6 +89,7 @@ $label = get_theme_mod( 'minimalistflex_header_label' );
         </h1>
     <?php endif; ?>
     <div class="spacer"></div>
+    <a id="minimalistflex-menu-focus-hack-2" href="#minimalistflex-menu-focus-hack-2" aria-label="<?php esc_attr_e( 'This element sends you to the last menu item.', 'minimalistflex' ) ?>"></a>
     <?php if ( has_nav_menu( 'main-menu' ) ): ?>
         <button id="menu-toggle" aria-label="<?php esc_attr_e( 'Toggle navigation dropdown', 'minimalistflex' ) ?>">
             <i id="menu-toggle-icon"></i>

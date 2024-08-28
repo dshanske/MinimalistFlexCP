@@ -356,7 +356,8 @@ a[target=_blank]::before {
     margin-top: 0.5em;
 }
 
-#minimalistflex-menu-focus-hack {
+#minimalistflex-menu-focus-hack,
+#minimalistflex-menu-focus-hack-2 {
     display: none;
 }
 
@@ -1515,6 +1516,10 @@ a img.alignwide {
     }
 
     #minimalistflex-menu-focus-hack {
+        display: inline;
+    }
+
+    .active #minimalistflex-menu-focus-hack-2 {
         display: inline;
     }
 

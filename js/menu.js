@@ -15,4 +15,7 @@ jQuery(document).ready(function($){
     $("#minimalistflex-menu-focus-hack").focus(function(){
         $("#menu-toggle").focus()
     })
+    $("#minimalistflex-menu-focus-hack-2").focus(function(){
+        $(".minimalistflex-menu").find(".menu-item:last").children("a").focus()
+    })
 })
