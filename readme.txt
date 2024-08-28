@@ -50,9 +50,11 @@ As a bonus, we have 4 pre-built color palettes for you.
 
 = 1.0.2 =
 * Addressed keyboard navigation issues. Implemented a mechanism to trap focus within the open menu.
-* Fixed improper usage of esc_attr on URLs. Used esc_url instead.
+* Added visual distinction for focused elements.
 * Added license information for images.
+* Fixed improper usage of esc_attr on URLs. Used esc_url instead.
 * Removed plugin functionality: Login / Logout.
+* Removed menu widget areas, for better accessibility.
 
 = 1.0.1 =
 * Addressed clear float issues.
