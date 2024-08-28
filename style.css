@@ -133,7 +133,7 @@ input {
     color: var(--minimalistflex-default);
     background-color: var(--minimalistflex-level1);
     border: solid 1px var(--minimalistflex-default);
-    border-radius: none;
+    border-radius: 0;
 }
 
 input[type=submit]:focus,
@@ -427,7 +427,7 @@ a[target=_blank]::before {
     width: 8px;
     height: 2px;
     transform-origin: 100%;
-    background-color: var(--minimalistflex-default);
+    background-color: var(--minimalistflex-header-text);
 }
 
 .minimalistflex-menu .menu-item-has-children::before {
@@ -1505,7 +1505,7 @@ a img.alignwide {
         left: 0;
         width: 100%;
         height: 100vh;
-        background-color: var(--minimalistflex-level2);
+        background-color: var(--minimalistflex-header-menu);
     }
 
     .active .minimalistflex-menu {
