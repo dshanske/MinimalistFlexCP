@@ -3,12 +3,13 @@
 # SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
 # SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
 # SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
+# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
 msgid ""
 msgstr ""
 "Project-Id-Version: MinimalistFlex 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/minimalistflex\n"
-"POT-Creation-Date: 2024-08-27T09:45:00+00:00\n"
-"PO-Revision-Date: 2024-08-27 17:46+0800\n"
+"POT-Creation-Date: 2024-08-28T02:53:46+00:00\n"
+"PO-Revision-Date: 2024-08-28 10:57+0800\n"
 "Last-Translator: 枫原万叶 <hufang2007@icloud.com>\n"
 "Language-Team: Chinese <kde-i18n-doc@kde.org>\n"
 "Language: zh_CN\n"
@@ -117,7 +118,7 @@ msgstr "&larr; 更早的评论"
 msgid "Newer Comments &rarr;"
 msgstr "更新的评论 &rarr;"
 
-#: comments.php:51 singular.php:52
+#: comments.php:51 singular.php:58
 msgid "Comments are closed."
 msgstr "评论已关闭。"
 
@@ -214,9 +215,17 @@ msgstr "页眉图片链接，此链接会转至「%s」。"
 msgid "The header image."
 msgstr "页眉图片。"
 
-#: header.php:93
+#: header.php:92
+msgid "This element sends you to the last menu item."
+msgstr "此元素将自动转至最后一个菜单项。"
+
+#: header.php:94
 msgid "Toggle navigation dropdown"
 msgstr "展开或收起导航菜单下拉菜单"
+
+#: header.php:101
+msgid "This element sends you back to the close menu button."
+msgstr "此元素将自动转至关闭菜单按钮。"
 
 #: includes/class-color-palette-control.php:35
 msgctxt "color palette"
@@ -638,7 +647,7 @@ msgstr "页脚"
 msgid "You may customize how your footer looks like here."
 msgstr "您可以在此配置您站点的页脚。"
 
-#: includes/customizer.php:447 templates/loop.php:96
+#: includes/customizer.php:447 templates/loop.php:107
 msgid "Read More"
 msgstr "阅读更多"
 
@@ -918,7 +927,7 @@ msgstr "文章作者"
 msgid "Admin"
 msgstr "管理员"
 
-#: page.php:24 singular.php:42 templates/loop.php:66
+#: page.php:24 singular.php:48 templates/loop.php:72
 msgid "Pages: "
 msgstr "页面："
 
@@ -942,26 +951,14 @@ msgstr "我们找不到您希望查找的内容。"
 
 #: sidebar-above-content.php:14 sidebar-below-content.php:14
 #: sidebar-footer-2.php:14 sidebar-footer-3.php:14 sidebar-footer.php:14
-#: sidebar-menu-2.php:14 sidebar-menu.php:17
 msgid "Sorry, but no widgets were found in this area."
 msgstr "抱歉，但是在此区域中没有找到任何小工具。"
 
 #: sidebar-above-content.php:15 sidebar-below-content.php:15
 #: sidebar-footer-2.php:15 sidebar-footer-3.php:15 sidebar-footer.php:15
-#: sidebar-menu-2.php:15 sidebar-menu.php:18 sidebar.php:18
+#: sidebar.php:18
 msgid "This message is displayed to administrators only."
 msgstr "此消息仅向管理员展示。"
-
-#: sidebar-menu.php:8 sidebar-menu.php:14
-msgid ""
-"Go to the right of the navigation menu, which conntains an extra widget area."
-msgstr "将转至导航菜单的右侧，此区域包含额外的小工具区域。"
-
-#: sidebar-menu.php:12 sidebar-menu.php:21
-msgid ""
-"Go to the left of the navigation menu, which is the menu and a menu widget "
-"area."
-msgstr "转到导航菜单的左侧，包含菜单和一个小工具区域。"
 
 #: sidebar.php:15
 msgid "Sorry, but no widgets were found in this area. "
@@ -975,38 +972,43 @@ msgstr "已显示一些默认的小工具。"
 msgid "Archives"
 msgstr "归档页"
 
-#: singular.php:33 templates/loop.php:42
-msgid ""
-"The thumbnail image. This is a default image so that it's purely decorative."
-msgstr "特色图像。此图像为默认图像，其仅为装饰性的。"
+#. translators: %s: Title of the post.
+#: singular.php:36 templates/loop.php:45
+msgid "The thumbnail image for %s."
+msgstr "%s 的特色图像"
 
 #: templates/empty.php:3
 msgid "Sorry, but nothing was found at this place."
 msgstr "抱歉，但是在此区域中没有找到任何小工具。"
 
 #. translators: %s: Post title associated with the thumbnail image.
-#: templates/loop.php:22 templates/loop.php:39
+#: templates/loop.php:22
 msgid "Thumbnail image of %s. Also a link that navigates to it."
 msgstr "文章 %s 的特色图片。此图片也将链接到对应的文章。"
 
-#: templates/loop.php:50
+#. translators: %s: Post title associated with the thumbnail image.
+#: templates/loop.php:39
+msgid "The thhumbnail image link for %s"
+msgstr "%s 的特色图片链接"
+
+#: templates/loop.php:56
 msgctxt "comment count"
 msgid "1 Comment"
 msgid_plural "%d Comments"
 msgstr[0] "%d 条评论"
 
 #. translators: %s: Post publish time.
-#: templates/loop.php:82 templates/publisher.php:19
+#: templates/loop.php:88 templates/publisher.php:19
 msgid "Published on %s"
 msgstr "发表于 %s"
 
 #. translators: %s: Post last modified time.
-#: templates/loop.php:88 templates/publisher.php:25
+#: templates/loop.php:94 templates/publisher.php:25
 msgid "Last modified on %s"
 msgstr "最后编辑于 %s"
 
 #. translators: %s: Post title.
-#: templates/loop.php:102
+#: templates/loop.php:103
 msgid "Read more of %s"
 msgstr "阅读 %s 的更多内容"
 

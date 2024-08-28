@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-08-27T09:45:00+00:00\n"
+"POT-Creation-Date: 2024-08-28T02:53:46+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: minimalistflex\n"
@@ -99,7 +99,7 @@ msgid "Newer Comments &rarr;"
 msgstr ""
 
 #: comments.php:51
-#: singular.php:52
+#: singular.php:58
 msgid "Comments are closed."
 msgstr ""
 
@@ -187,8 +187,16 @@ msgstr ""
 msgid "The header image."
 msgstr ""
 
-#: header.php:93
+#: header.php:92
+msgid "This element sends you to the last menu item."
+msgstr ""
+
+#: header.php:94
 msgid "Toggle navigation dropdown"
+msgstr ""
+
+#: header.php:101
+msgid "This element sends you back to the close menu button."
 msgstr ""
 
 #: includes/class-color-palette-control.php:35
@@ -606,7 +614,7 @@ msgid "You may customize how your footer looks like here."
 msgstr ""
 
 #: includes/customizer.php:447
-#: templates/loop.php:96
+#: templates/loop.php:107
 msgid "Read More"
 msgstr ""
 
@@ -886,8 +894,8 @@ msgid "Admin"
 msgstr ""
 
 #: page.php:24
-#: singular.php:42
-#: templates/loop.php:66
+#: singular.php:48
+#: templates/loop.php:72
 msgid "Pages: "
 msgstr ""
 
@@ -914,8 +922,6 @@ msgstr ""
 #: sidebar-footer-2.php:14
 #: sidebar-footer-3.php:14
 #: sidebar-footer.php:14
-#: sidebar-menu-2.php:14
-#: sidebar-menu.php:17
 msgid "Sorry, but no widgets were found in this area."
 msgstr ""
 
@@ -924,20 +930,8 @@ msgstr ""
 #: sidebar-footer-2.php:15
 #: sidebar-footer-3.php:15
 #: sidebar-footer.php:15
-#: sidebar-menu-2.php:15
-#: sidebar-menu.php:18
 #: sidebar.php:18
 msgid "This message is displayed to administrators only."
-msgstr ""
-
-#: sidebar-menu.php:8
-#: sidebar-menu.php:14
-msgid "Go to the right of the navigation menu, which conntains an extra widget area."
-msgstr ""
-
-#: sidebar-menu.php:12
-#: sidebar-menu.php:21
-msgid "Go to the left of the navigation menu, which is the menu and a menu widget area."
 msgstr ""
 
 #: sidebar.php:15
@@ -952,9 +946,10 @@ msgstr ""
 msgid "Archives"
 msgstr ""
 
-#: singular.php:33
-#: templates/loop.php:42
-msgid "The thumbnail image. This is a default image so that it's purely decorative."
+#. translators: %s: Title of the post.
+#: singular.php:36
+#: templates/loop.php:45
+msgid "The thumbnail image for %s."
 msgstr ""
 
 #: templates/empty.php:3
@@ -963,11 +958,15 @@ msgstr ""
 
 #. translators: %s: Post title associated with the thumbnail image.
 #: templates/loop.php:22
-#: templates/loop.php:39
 msgid "Thumbnail image of %s. Also a link that navigates to it."
 msgstr ""
 
-#: templates/loop.php:50
+#. translators: %s: Post title associated with the thumbnail image.
+#: templates/loop.php:39
+msgid "The thhumbnail image link for %s"
+msgstr ""
+
+#: templates/loop.php:56
 msgctxt "comment count"
 msgid "1 Comment"
 msgid_plural "%d Comments"
@@ -975,19 +974,19 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. translators: %s: Post publish time.
-#: templates/loop.php:82
+#: templates/loop.php:88
 #: templates/publisher.php:19
 msgid "Published on %s"
 msgstr ""
 
 #. translators: %s: Post last modified time.
-#: templates/loop.php:88
+#: templates/loop.php:94
 #: templates/publisher.php:25
 msgid "Last modified on %s"
 msgstr ""
 
 #. translators: %s: Post title.
-#: templates/loop.php:102
+#: templates/loop.php:103
 msgid "Read more of %s"
 msgstr ""
 
