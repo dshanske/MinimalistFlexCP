@@ -1242,6 +1242,7 @@ p[class*=comment-form-] {
 .minimalistflex-controls li a:focus {
     background-color: var(--minimalistflex-tint-contrast);
     color: var(--minimalistflex-contrast-dark);
+    text-decoration: none;
 }
 
 /*
