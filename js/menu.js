@@ -7,8 +7,7 @@ jQuery(document).ready(function($){
         e.preventDefault()
     })
     $("body").removeClass("loading")
-    $(".menu-item-has-children").click(function(e){
-        e.preventDefault()
+    $(".menu-item-has-children").click(function(){
         $(this).toggleClass("active")
         $(this).parent().parent().toggleClass("active")
     })
