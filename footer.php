@@ -34,12 +34,13 @@ if( is_home() ) {
 
 </main>
 
+<ul class="minimalistflex-controls">
+    <?php if ( get_theme_mod( 'minimalistflex_interface_scroll_top', 'yes' ) === 'yes' ): ?>
+        <li><a href="#" aria-label="<?php esc_attr_e( 'Back to top', 'minimalistflex' ) ?>">:D</a></li>
+    <?php endif; ?>
+</ul>
+
 <footer class="minimalistflex-footer">
-    <ul class="minimalistflex-controls">
-        <?php if ( get_theme_mod( 'minimalistflex_interface_scroll_top', 'yes' ) === 'yes' ): ?>
-            <li><a href="#" aria-label="<?php esc_attr_e( 'Back to top', 'minimalistflex' ) ?>">:D</a></li>
-        <?php endif; ?>
-    </ul>
     <div class="minimalistflex-footer-widgets-container">
         <?php $sidebars = get_theme_mod( 'minimalistflex_footer_widget_layout', 'one' ); ?>
         <?php

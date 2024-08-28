@@ -1215,7 +1215,6 @@ p[class*=comment-form-] {
     list-style-type: none;
     transition: background-color 250ms,
                 color 250ms;
-    z-index: 250;
 }
 
 .minimalistflex-controls:not(:has(li)) {
@@ -1253,7 +1252,6 @@ p[class*=comment-form-] {
     padding: 1.5em;
     background-color: var(--minimalistflex-footer-bg);
     position: relative;
-    z-index: 260;
 }
 
 .minimalistflex-footer * {
