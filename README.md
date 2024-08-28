@@ -39,6 +39,9 @@ As a bonus, we have 4 pre-built color palettes for you.
 
 ## Changelog
 
+### 1.0.3
+* Addressed an important issue where the menu items cannot be opened due to an improper usage of e.preventDefault().
+
 ### 1.0.2
 * Addressed keyboard navigation issues. Implemented a mechanism to trap focus within the open menu.
 * Added visual distinction for focused elements.
