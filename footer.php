@@ -57,11 +57,11 @@ if( is_home() ) {
         <?php if ( display_header_text() ): ?>
             <div class="footer-blog-description">
                 <div class="footer-blog-title">
-                    <a href="<?php echo esc_url( home_url() ); ?>" class="blog-title-link"><?php echo get_bloginfo( 'name' ) ?></a>
+                    <a href="<?php echo esc_url( home_url() ); ?>" class="blog-title-link"><?php echo wp_kses_data( get_bloginfo( 'name' ) ) ?></a>
                 </div>
                 <?php if( get_bloginfo( 'description' ) ): ?>
                     <div class="footer-blog-tagline">
-                        <?php echo get_bloginfo( 'description' ); ?>
+                        <?php echo wp_kses_data( get_bloginfo( 'description' ) ) ?>
                     </div>
                 <?php endif; ?>
             </div>

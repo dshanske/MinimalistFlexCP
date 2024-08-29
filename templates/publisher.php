@@ -17,13 +17,13 @@ if ( !defined( 'WPINC' ) ) {
             <?php printf(
                 /* translators: %s: Post publish time. */
                 esc_html__( 'Published on %s', 'minimalistflex' ),
-                get_the_date()
+                esc_html( get_the_date() )
             ) ?>
         <?php else: ?>
             <?php printf(
                 /* translators: %s: Post last modified time. */
                 esc_html__( 'Last modified on %s', 'minimalistflex' ),
-                get_the_modified_date()
+                esc_html( get_the_modified_date() )
             ) ?>
         <?php endif; ?>
     <?php endif; ?>
