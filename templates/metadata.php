@@ -5,31 +5,31 @@ if ( !defined( 'WPINC' ) ) {
 ?>
 
 <div class="singular-meta">
-    <?php $tags = get_the_category(); ?>
-    <?php if( $tags ): ?>
+    <?php $mf_tags = get_the_category(); ?>
+    <?php if( $mf_tags ): ?>
         <div class="singular-categories">
             <div class="categories-indicator">
                 <?php esc_html_e( 'Categories:', 'minimalistflex' ) ?>
             </div>
-            <?php foreach( $tags as $tag ) { ?>
+            <?php foreach( $mf_tags as $mf_tag ) { ?>
                 <div class="singular-category">
-                    <a href="<?php echo esc_url( get_category_link( $tag ) ) ?>">
-                        <?php echo $tag->name; ?>
+                    <a href="<?php echo esc_url( get_category_link( $mf_tag ) ) ?>">
+                        <?php echo $mf_tag->name; ?>
                     </a>
                 </div>
             <?php } ?>
         </div>
     <?php endif; ?>
-    <?php $tags = get_the_tags(); ?>
-    <?php if( $tags ): ?>
+    <?php $mf_tags = get_the_tags(); ?>
+    <?php if( $mf_tags ): ?>
     <div class="singular-categories singular-tags">
         <div class="categories-indicator tags-indicator">
             <?php esc_html_e( 'Tags:', 'minimalistflex' ) ?>
         </div>
-        <?php foreach( $tags as $tag ) { ?>
+        <?php foreach( $mf_tags as $mf_tag ) { ?>
             <div class="singular-category singular-tag">
-                <a href="<?php echo esc_url( get_tag_link( $tag ) ) ?>">
-                    <?php echo $tag->name; ?>
+                <a href="<?php echo esc_url( get_tag_link( $mf_tag ) ) ?>">
+                    <?php echo $mf_tag->name; ?>
                 </a>
             </div>
         <?php } ?>

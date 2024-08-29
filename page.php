@@ -8,7 +8,7 @@ if ( !defined( 'WPINC' ) ) {
 
 <?php if ( have_posts() ) :
         the_post();
-        $id = get_the_ID();
+        $mf_id = get_the_ID();
     ?>
     <div <?php post_class( "singular" ) ?>>
         <?php if ( has_post_thumbnail() ): ?>

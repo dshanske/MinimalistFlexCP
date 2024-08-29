@@ -5,14 +5,14 @@ if ( !defined( 'WPINC' ) ) {
 ?>
 
 <?php
-$default_images = explode( ',', get_theme_mod( 'minimalistflex_default_featured_images' ));
-$default_image_location = get_theme_mod( 'minimalistflex_default_featured_images_location', 'archive' );
+$mf_default_images = explode( ',', get_theme_mod( 'minimalistflex_default_featured_images' ));
+$mf_default_image_location = get_theme_mod( 'minimalistflex_default_featured_images_location', 'archive' );
 ?>
 
 <?php while ( have_posts() ) :
         the_post();
-        $id = get_the_author_meta('ID');
-        $post_id = get_the_ID();
+        $mf_id = get_the_author_meta('ID');
+        $mf_post_id = get_the_ID();
     ?>
     <div <?php post_class("panel"); ?>>
         <?php if ( has_post_thumbnail() ): ?>
@@ -24,13 +24,13 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
             ) ?>">
                 <?php the_post_thumbnail( 'large' ); ?>
             </a>
-        <?php elseif ( ( $default_images[0] <> '' || minimalistflex_get_first_image() ) && $default_image_location <> 'no' && $default_image_location <> 'single' ): ?>
+        <?php elseif ( ( $mf_default_images[0] <> '' || minimalistflex_get_first_image() ) && $mf_default_image_location <> 'no' && $mf_default_image_location <> 'single' ): ?>
             <?php if ( get_theme_mod( 'minimalistflex_default_featured_images_first_image', 'yes' ) === 'yes' && minimalistflex_get_first_image() ): ?>
-                <?php $imgsrc = minimalistflex_get_first_image(); ?>
+                <?php $mf_imgsrc = minimalistflex_get_first_image(); ?>
             <?php else: ?>
                 <?php
-                    $key = minimalistflex_get_seconds() % count($default_images);
-                    $imgsrc = $default_images[$key];
+                    $mf_key = minimalistflex_get_seconds() % count($mf_default_images);
+                    $mf_imgsrc = $mf_default_images[$mf_key];
                 ?>
             <?php endif; ?>
             <a class="panel-image" href="<?php the_permalink() ?>" aria-label="<?php
@@ -39,7 +39,7 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
                 esc_attr__( 'The thhumbnail image link for %s', 'minimalistflex' ),
                 get_the_title()
             ) ?>">
-                <img src="<?php echo esc_url( $imgsrc );?>" aria-label="<?php
+                <img src="<?php echo esc_url( $mf_imgsrc );?>" aria-label="<?php
                     printf(
                         /* translators: %s: Title of the post. */
                         esc_attr__( 'The thumbnail image for %s.', 'minimalistflex' ),
@@ -74,15 +74,15 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
             </div>
             <div class="panel-meta">
                 <?php if ( get_theme_mod( 'minimalistflex_interface_publisher', 'yes' ) === 'yes' ): ?>
-                    <a class="panel-author" href="<?php echo esc_url( get_author_posts_url($id) ) ?>">
-                        <span aria-hidden="true"><?php echo get_avatar( $id, 80 ) ?></span>
+                    <a class="panel-author" href="<?php echo esc_url( get_author_posts_url($mf_id) ) ?>">
+                        <span aria-hidden="true"><?php echo get_avatar( $mf_id, 80 ) ?></span>
                         <?php the_author() ?>
                     </a>
                 <?php endif; ?>
-                <?php $datemode = get_theme_mod( 'minimalistflex_interface_date', 'modify' ); ?>
-                <?php if ( $datemode <> 'no' ): ?>
+                <?php $mf_datemode = get_theme_mod( 'minimalistflex_interface_date', 'modify' ); ?>
+                <?php if ( $mf_datemode <> 'no' ): ?>
                     <div class="panel-author">
-                        <?php if ( $datemode === 'publish' || get_the_modified_date() <> get_the_date() ): ?>
+                        <?php if ( $mf_datemode === 'publish' || get_the_modified_date() <> get_the_date() ): ?>
                             <?php printf(
                                 /* translators: %s: Post publish time. */
                                 esc_html__( 'Published on %s', 'minimalistflex' ),

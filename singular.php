@@ -5,32 +5,32 @@ if ( !defined( 'WPINC' ) ) {
 ?>
 
 <?php
-$default_images = explode( ',', get_theme_mod( 'minimalistflex_default_featured_images' ));
-$default_image_location = get_theme_mod( 'minimalistflex_default_featured_images_location', 'archive' );
+$mf_default_images = explode( ',', get_theme_mod( 'minimalistflex_default_featured_images' ));
+$mf_default_image_location = get_theme_mod( 'minimalistflex_default_featured_images_location', 'archive' );
 ?>
 
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) :
         the_post();
-        $id = get_the_author_meta( 'ID' );
+        $mf_id = get_the_author_meta( 'ID' );
     ?>
     <div <?php post_class( "singular" ) ?>>
         <?php if ( has_post_thumbnail() ): ?>
             <div class="singular-image">
                 <?php the_post_thumbnail( 'large' ); ?>
             </div>
-        <?php elseif ( ( $default_images[0] <> '' || minimalistflex_get_first_image() ) && $default_image_location <> 'no' && $default_image_location <> 'archive' ): ?>
+        <?php elseif ( ( $mf_default_images[0] <> '' || minimalistflex_get_first_image() ) && $mf_default_image_location <> 'no' && $mf_default_image_location <> 'archive' ): ?>
             <?php if ( get_theme_mod( 'minimalistflex_default_featured_images_first_image', 'yes' ) === 'yes' && minimalistflex_get_first_image() ): ?>
-                <?php $imgsrc = minimalistflex_get_first_image(); ?>
+                <?php $mf_imgsrc = minimalistflex_get_first_image(); ?>
             <?php else: ?>
                 <?php
-                    $key = minimalistflex_get_seconds() % count($default_images);
-                    $imgsrc = $default_images[$key];
+                    $mf_key = minimalistflex_get_seconds() % count($mf_default_images);
+                    $mf_imgsrc = $mf_default_images[$mf_key];
                 ?>
             <?php endif; ?>
             <div class="singular-image">
-                <img src="<?php echo esc_url( $imgsrc ) ?>" aria-label="<?php
+                <img src="<?php echo esc_url( $mf_imgsrc ) ?>" aria-label="<?php
                     printf(
                         /* translators: %s: Title of the post. */
                         esc_attr__( 'The thumbnail image for %s.', 'minimalistflex' ),
