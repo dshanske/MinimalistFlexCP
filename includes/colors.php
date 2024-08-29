@@ -9,7 +9,7 @@ if ( !defined( 'WPINC' ) ) {
     global $colors;
 ?>
 
-<style>
+<style id="minimalistflex-color-css">
 
 :root {
     --minimalistflex-header: <?php
