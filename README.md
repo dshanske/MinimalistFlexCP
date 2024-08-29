@@ -42,6 +42,7 @@ As a bonus, we have 4 pre-built color palettes for you.
 ### 1.0.4
 * Addressed a security issue where many places have not used proper escaping / no escaping at all.
 * Added correct styling for the main content without a sidebar.
+* Added correct singular placeholders.
 
 ### 1.0.3
 * Addressed an important issue where the menu items cannot be opened due to an improper usage of e.preventDefault().

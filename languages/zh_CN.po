@@ -4,12 +4,13 @@
 # SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
 # SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
 # SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
+# SPDX-FileCopyrightText: 2024 SPDX-FileCopyrightText :
 msgid ""
 msgstr ""
 "Project-Id-Version: MinimalistFlex 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/minimalistflex\n"
-"POT-Creation-Date: 2024-08-28T02:53:46+00:00\n"
-"PO-Revision-Date: 2024-08-28 10:57+0800\n"
+"POT-Creation-Date: 2024-08-29T07:51:25+00:00\n"
+"PO-Revision-Date: 2024-08-29 15:52+0800\n"
 "Last-Translator: 枫原万叶 <hufang2007@icloud.com>\n"
 "Language-Team: Chinese <kde-i18n-doc@kde.org>\n"
 "Language: zh_CN\n"
@@ -102,7 +103,7 @@ msgstr "%s 的所有文章"
 #. translators: %1$s: Number of comments. %2$s: Post title.
 #: comments.php:19
 msgctxt "comments title"
-msgid "One comment on \"%2$s\""
+msgid "%1$s comment on \"%2$s\""
 msgid_plural "%1$s comments on \"%2$s\""
 msgstr[0] "「%2$s」上有 %1$s 条评论"
 
@@ -131,48 +132,48 @@ msgstr "返回页首"
 msgid "Theme <a href=\"%s\">MinimalistFlex</a>."
 msgstr "<a href=\"%s\">MinimalistFlex</a> 主题。"
 
-#: functions.php:66
+#: functions.php:67
 msgctxt "sidebar name"
 msgid "Main Sidebar"
 msgstr "主要侧栏"
 
-#: functions.php:68
+#: functions.php:69
 msgid "Widgets in this area will be shown on all posts and pages."
 msgstr "在此区域中的小工具将会显示在所有的文章和页面中。"
 
-#: functions.php:75
+#: functions.php:76
 msgctxt "sidebar name"
 msgid "Above Content"
 msgstr "主要内容上方"
 
-#: functions.php:77
+#: functions.php:78
 msgid "Widgets in this area will be shown above the main content."
 msgstr "在此区域中的小工具将会显示在主要内容的上方。"
 
-#: functions.php:84
+#: functions.php:85
 msgctxt "sidebar name"
 msgid "Below Content"
 msgstr "主要内容下方"
 
-#: functions.php:86
+#: functions.php:87
 msgid "Widgets in this area will be shown below the main content."
 msgstr "在此区域中的小工具将会显示在主要内容的下方。"
 
-#: functions.php:93
+#: functions.php:94
 msgctxt "sidebar name"
 msgid "Footer"
 msgstr "页脚"
 
-#: functions.php:95
+#: functions.php:96
 msgid "Widgets in this area will be shown in the footer. Always shows."
 msgstr "在此区域中的小工具将会显示在页脚中。此小工具区域始终显示。"
 
-#: functions.php:102
+#: functions.php:103
 msgctxt "sidebar name"
 msgid "Footer 2"
 msgstr "页脚 2"
 
-#: functions.php:104
+#: functions.php:105
 msgid ""
 "Widgets in this area will be shown in the footer to construct a multi column "
 "footer. Only shows when the footer is set to display it. Also twice as wide "
@@ -181,12 +182,12 @@ msgstr ""
 "在此区域中的小工具将会在页脚中显示，以形成多栏布局。仅当被设置为显示时才会显"
 "示。宽度为其它页脚小工具区域的两倍。"
 
-#: functions.php:111
+#: functions.php:112
 msgctxt "sidebar name"
 msgid "Footer 3"
 msgstr "页脚 3"
 
-#: functions.php:113
+#: functions.php:114
 msgid ""
 "Widgets in this area will be shown in the footer to construct a multi column "
 "footer. Only shows when the footer is set to display it."
@@ -194,7 +195,7 @@ msgstr ""
 "在此区域中的小工具将会在页脚中显示，以形成多栏布局。仅当被设置为显示时才会显"
 "示。"
 
-#: functions.php:125
+#: functions.php:126
 msgid "Main Menu"
 msgstr "主菜单"
 
@@ -647,7 +648,7 @@ msgstr "页脚"
 msgid "You may customize how your footer looks like here."
 msgstr "您可以在此配置您站点的页脚。"
 
-#: includes/customizer.php:447 templates/loop.php:107
+#: includes/customizer.php:447 templates/loop.php:108
 msgid "Read More"
 msgstr "阅读更多"
 
@@ -927,7 +928,7 @@ msgstr "文章作者"
 msgid "Admin"
 msgstr "管理员"
 
-#: page.php:24 singular.php:48 templates/loop.php:72
+#: page.php:24 singular.php:48 templates/loop.php:73
 msgid "Pages: "
 msgstr "页面："
 
@@ -991,24 +992,25 @@ msgstr "文章 %s 的特色图片。此图片也将链接到对应的文章。"
 msgid "The thhumbnail image link for %s"
 msgstr "%s 的特色图片链接"
 
-#: templates/loop.php:56
+#. translators: %d: Number of comments.
+#: templates/loop.php:57
 msgctxt "comment count"
-msgid "1 Comment"
+msgid "%d Comment"
 msgid_plural "%d Comments"
 msgstr[0] "%d 条评论"
 
 #. translators: %s: Post publish time.
-#: templates/loop.php:88 templates/publisher.php:19
+#: templates/loop.php:89 templates/publisher.php:19
 msgid "Published on %s"
 msgstr "发表于 %s"
 
 #. translators: %s: Post last modified time.
-#: templates/loop.php:94 templates/publisher.php:25
+#: templates/loop.php:95 templates/publisher.php:25
 msgid "Last modified on %s"
 msgstr "最后编辑于 %s"
 
 #. translators: %s: Post title.
-#: templates/loop.php:103
+#: templates/loop.php:104
 msgid "Read more of %s"
 msgstr "阅读 %s 的更多内容"
 
@@ -1069,3 +1071,4 @@ msgstr "MinimalistFlex 暗背景色"
 msgctxt "Color name"
 msgid "MinimalistFlex White"
 msgstr "MinimalistFlex 白色"
+

@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v3.0 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: MinimalistFlex 1.0.2\n"
+"Project-Id-Version: MinimalistFlex 1.0.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/minimalistflex\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-08-28T02:53:46+00:00\n"
+"POT-Creation-Date: 2024-08-29T07:51:25+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: minimalistflex\n"
@@ -81,7 +81,7 @@ msgstr ""
 #. translators: %1$s: Number of comments. %2$s: Post title.
 #: comments.php:19
 msgctxt "comments title"
-msgid "One comment on \"%2$s\""
+msgid "%1$s comment on \"%2$s\""
 msgid_plural "%1$s comments on \"%2$s\""
 msgstr[0] ""
 msgstr[1] ""
@@ -112,61 +112,61 @@ msgstr ""
 msgid "Theme <a href=\"%s\">MinimalistFlex</a>."
 msgstr ""
 
-#: functions.php:66
+#: functions.php:67
 msgctxt "sidebar name"
 msgid "Main Sidebar"
 msgstr ""
 
-#: functions.php:68
+#: functions.php:69
 msgid "Widgets in this area will be shown on all posts and pages."
 msgstr ""
 
-#: functions.php:75
+#: functions.php:76
 msgctxt "sidebar name"
 msgid "Above Content"
 msgstr ""
 
-#: functions.php:77
+#: functions.php:78
 msgid "Widgets in this area will be shown above the main content."
 msgstr ""
 
-#: functions.php:84
+#: functions.php:85
 msgctxt "sidebar name"
 msgid "Below Content"
 msgstr ""
 
-#: functions.php:86
+#: functions.php:87
 msgid "Widgets in this area will be shown below the main content."
 msgstr ""
 
-#: functions.php:93
+#: functions.php:94
 msgctxt "sidebar name"
 msgid "Footer"
 msgstr ""
 
-#: functions.php:95
+#: functions.php:96
 msgid "Widgets in this area will be shown in the footer. Always shows."
 msgstr ""
 
-#: functions.php:102
+#: functions.php:103
 msgctxt "sidebar name"
 msgid "Footer 2"
 msgstr ""
 
-#: functions.php:104
+#: functions.php:105
 msgid "Widgets in this area will be shown in the footer to construct a multi column footer. Only shows when the footer is set to display it. Also twice as wide as other footer widget areas."
 msgstr ""
 
-#: functions.php:111
+#: functions.php:112
 msgctxt "sidebar name"
 msgid "Footer 3"
 msgstr ""
 
-#: functions.php:113
+#: functions.php:114
 msgid "Widgets in this area will be shown in the footer to construct a multi column footer. Only shows when the footer is set to display it."
 msgstr ""
 
-#: functions.php:125
+#: functions.php:126
 msgid "Main Menu"
 msgstr ""
 
@@ -614,7 +614,7 @@ msgid "You may customize how your footer looks like here."
 msgstr ""
 
 #: includes/customizer.php:447
-#: templates/loop.php:107
+#: templates/loop.php:108
 msgid "Read More"
 msgstr ""
 
@@ -895,7 +895,7 @@ msgstr ""
 
 #: page.php:24
 #: singular.php:48
-#: templates/loop.php:72
+#: templates/loop.php:73
 msgid "Pages: "
 msgstr ""
 
@@ -966,27 +966,28 @@ msgstr ""
 msgid "The thhumbnail image link for %s"
 msgstr ""
 
-#: templates/loop.php:56
+#. translators: %d: Number of comments.
+#: templates/loop.php:57
 msgctxt "comment count"
-msgid "1 Comment"
+msgid "%d Comment"
 msgid_plural "%d Comments"
 msgstr[0] ""
 msgstr[1] ""
 
 #. translators: %s: Post publish time.
-#: templates/loop.php:88
+#: templates/loop.php:89
 #: templates/publisher.php:19
 msgid "Published on %s"
 msgstr ""
 
 #. translators: %s: Post last modified time.
-#: templates/loop.php:94
+#: templates/loop.php:95
 #: templates/publisher.php:25
 msgid "Last modified on %s"
 msgstr ""
 
 #. translators: %s: Post title.
-#: templates/loop.php:103
+#: templates/loop.php:104
 msgid "Read more of %s"
 msgstr ""
 
