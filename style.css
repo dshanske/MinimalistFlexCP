@@ -142,13 +142,11 @@ button:focus {
     text-decoration: underline;
 }
 
-.minimalistflex-master a,
-.minimalistflex-master a * {
+.minimalistflex-master a {
     color: var(--minimalistflex-link);
 }
 
-.minimalistflex-master a:hover,
-.minimalistflex-master a:hover * {
+.minimalistflex-master a:hover {
     color: var(--minimalistflex-link-hover);
 }
 
@@ -177,10 +175,10 @@ button:focus {
     border-radius: 1em;
 }
 
-tt,
-kbd,
-code,
-pre {
+.minimalistflex-master tt,
+.minimalistflex-master kbd,
+.minimalistflex-master code,
+.minimalistflex-master pre {
     font-family: Hack, 'Courier New', Courier, monospace;
     background-color: #111111;
     color: #ffffff;
@@ -189,32 +187,32 @@ pre {
     overflow-x: auto;
 }
 
-code:has(br) {
+.minimalistflex-master code:has(br) {
     display: inline-block;
 }
 
-blockquote,
-address {
+.minimalistflex-master blockquote,
+.minimalistflex-master address {
     border-left: solid 3px var(--minimalistflex-tint);
     padding-left: 1em;
 }
 
-dt {
+.minimalistflex-master dt {
     font-weight: bold;
 }
 
-table {
+.minimalistflex-master table {
     border: none;
     border-collapse: collapse;
 }
 
-table thead,
-table tbody tr:not(:last-child) {
+.minimalistflex-master table thead,
+.minimalistflex-master table tbody tr:not(:last-child) {
     border-bottom: solid 1px var(--minimalistflex-default);
 }
 
-table thead,
-table tbody tr:nth-child(2n) {
+.minimalistflex-master table thead,
+.minimalistflex-master table tbody tr:nth-child(2n) {
     background-color: color-mix(
         in srgb,
         #f0f0f0,
@@ -226,17 +224,19 @@ table tbody tr:nth-child(2n) {
     text-align: center;
 }
 
-a[target=_blank] {
-    margin-left: 1.5em;
+.minimalistflex-master a[target=_blank] {
+    padding-left: 1em;
+    position: relative;
 }
 
-a[target=_blank]::before {
+.minimalistflex-master a[target=_blank]::before {
     content: "\f504";
     font-family: "Dashicons";
     display: inline-block;
     position: absolute;
-    top: calc(1em + 3px);
-    left: 1em;
+    font-size: 14px;
+    top: -5px;
+    left: 0;
 }
 
 /*
@@ -464,7 +464,6 @@ a[target=_blank]::before {
 .minimalistflex-master {
     display: flex;
     flex-wrap: nowrap;
-    align-items: stretch;
 }
 
 .minimalistflex-master.minimalistflex-sidebar-layout-right {
@@ -478,6 +477,10 @@ a[target=_blank]::before {
 .minimalistflex-content {
     width: 67%;
     background-color: var(--minimalistflex-level1);
+}
+
+.minimalistflex-master.minimalistflex-sidebar-layout-no .minimalistflex-content {
+    width: 100%;
 }
 
 .minimalistflex-sidebar {
