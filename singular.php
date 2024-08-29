@@ -55,7 +55,7 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
         <?php if ( comments_open() || get_comments_number() ) :
 	        comments_template();
         else: ?>
-            <p class="no-comments"><?php _e( 'Comments are closed.', 'minimalistflex' ); ?></p>
+            <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'minimalistflex' ); ?></p>
         <?php endif; ?>
     </div>
 <?php else: ?>

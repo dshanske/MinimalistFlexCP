@@ -11,7 +11,7 @@ if ( !defined( 'WPINC' ) ) {
             <?php echo get_avatar( $userid, 80 ); ?>
         </div>
         <div class="author-description">
-            <a class="author-link" href="<?php echo get_author_posts_url( $userid ) ?>"><?php the_author() ?></a>
+            <a class="author-link" href="<?php echo esc_url( get_author_posts_url( $userid ) ) ?>"><?php the_author() ?></a>
             <p class="author-tagline"><?php the_author_meta( 'description' ) ?></p>
         </div>
     </div>

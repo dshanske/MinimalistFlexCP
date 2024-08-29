@@ -13,7 +13,7 @@ if ( !defined( 'WPINC' ) ) {
                 <?php
                     printf(
                         /* translators: %s: The search query. */
-                        __( 'You have searched for: "%s"', 'minimalistflex' ),
+                        esc_html__( 'You have searched for: "%s"', 'minimalistflex' ),
                         get_search_query()
                     )
                 ?>
@@ -37,7 +37,7 @@ if ( !defined( 'WPINC' ) ) {
                 <?php
                     printf(
                         /* translators: %s: The search query. */
-                        __( 'You have searched for: "%s"', 'minimalistflex' ),
+                        esc_html__( 'You have searched for: "%s"', 'minimalistflex' ),
                         get_search_query()
                     )
                 ?>

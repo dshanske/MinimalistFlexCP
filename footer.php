@@ -36,7 +36,7 @@ if( is_home() ) {
 
 <ul class="minimalistflex-controls">
     <?php if ( get_theme_mod( 'minimalistflex_interface_scroll_top', 'yes' ) === 'yes' ): ?>
-        <li><a href="#" aria-label="<?php esc_attr_e( 'Back to top', 'minimalistflex' ) ?>">:D</a></li>
+        <li><a href="#" aria-label="<?php esc_attr_e( 'Back to top', 'minimalistflex' ) ?>"><i class="dashicons dashicons-arrow-up-alt"></i></a></li>
     <?php endif; ?>
 </ul>
 
@@ -75,7 +75,7 @@ if( is_home() ) {
                 <?php
                     printf(
                         /* translators: %s: Link to theme author website. */
-                        __( 'Theme <a href="%s">MinimalistFlex</a>.', 'minimalistflex' ),
+                        esc_html__( 'Theme <a href="%s">MinimalistFlex</a>.', 'minimalistflex' ),
                         esc_url( 'https://onmyodev.com/' )
                     )
                 ?>

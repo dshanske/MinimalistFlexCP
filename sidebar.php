@@ -23,7 +23,7 @@ if ( !defined( 'WPINC' ) ) {
         </li>
         
         <li id="archives" class="panel widget">
-            <h3 class="widget-title"><?php _e( 'Archives', 'minimalistflex' ); ?></h3>
+            <h3 class="widget-title"><?php esc_html_e( 'Archives', 'minimalistflex' ); ?></h3>
             <ul>
                 <?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
             </ul>

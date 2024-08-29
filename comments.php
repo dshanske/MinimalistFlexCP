@@ -16,13 +16,13 @@ if ( post_password_required() ) {
 			<?php
 			printf(
 				/* translators: %1$s: Number of comments. %2$s: Post title. */
-				_nx(
+				esc_html( _nx(
 					'One comment on "%2$s"',
 					'%1$s comments on "%2$s"',
 					get_comments_number(),
 					'comments title',
 					'minimalistflex'
-				),
+				) ),
 				number_format_i18n( get_comments_number() ),
 				'<span>' . get_the_title() . '</span>'
 			);
@@ -41,14 +41,14 @@ if ( post_password_required() ) {
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 			<nav class="nav-links navigation comment-navigation" role="navigation">
-				<h1 class="screen-reader-text section-heading"><?php _e( 'Comment navigation', 'minimalistflex' ); ?></h1>
-				<div class="previous"><?php previous_comments_link( __( '&larr; Older Comments', 'minimalistflex' ) ); ?></div>
-				<div class="next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'minimalistflex' ) ); ?></div>
+				<h1 class="screen-reader-text section-heading"><?php esc_html_e( 'Comment navigation', 'minimalistflex' ); ?></h1>
+				<div class="previous"><?php previous_comments_link( esc_html__( '&larr; Older Comments', 'minimalistflex' ) ); ?></div>
+				<div class="next"><?php next_comments_link( esc_html__( 'Newer Comments &rarr;', 'minimalistflex' ) ); ?></div>
 			</nav>
 		<?php endif; ?>
 
 		<?php if ( ! comments_open() && get_comments_number() ) : ?>
-			<p class="no-comments"><?php _e( 'Comments are closed.', 'minimalistflex' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'minimalistflex' ); ?></p>
 		<?php endif; ?>
 
 	<?php endif; ?>

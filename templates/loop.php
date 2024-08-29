@@ -69,7 +69,7 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
             <div class="panel-main">
                 <?php the_excerpt(); ?>
                 <?php wp_link_pages( Array(
-                    'before' => '<p class="panel post-nav-links"><span class="post-nav-links-indicator">' . __('Pages: ', 'minimalistflex') . '</span>'
+                    'before' => '<p class="panel post-nav-links"><span class="post-nav-links-indicator">' . esc_html__('Pages: ', 'minimalistflex') . '</span></p>'
                 ) ); ?>
             </div>
             <div class="panel-meta">
@@ -85,13 +85,13 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
                         <?php if ( $datemode === 'publish' || get_the_modified_date() <> get_the_date() ): ?>
                             <?php printf(
                                 /* translators: %s: Post publish time. */
-                                __( 'Published on %s', 'minimalistflex' ),
+                                esc_html__( 'Published on %s', 'minimalistflex' ),
                                 get_the_date()
                             ) ?>
                         <?php else: ?>
                             <?php printf(
                                 /* translators: %s: Post last modified time. */
-                                __( 'Last modified on %s', 'minimalistflex' ),
+                                esc_html__( 'Last modified on %s', 'minimalistflex' ),
                                 get_the_modified_date()
                             ) ?>
                         <?php endif; ?>
@@ -100,7 +100,7 @@ $default_image_location = get_theme_mod( 'minimalistflex_default_featured_images
                 <a class="panel panel-link" href="<?php the_permalink(); ?>" aria-label="<?php
                         printf(
                             /* translators: %s: Post title. */
-                            __( 'Read more of %s', 'minimalistflex' ),
+                            esc_attr__( 'Read more of %s', 'minimalistflex' ),
                             get_the_title()
                         )
                     ?>">

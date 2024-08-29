@@ -16,13 +16,13 @@ if ( !defined( 'WPINC' ) ) {
         <?php if ( $datemode == 'publish' || get_the_modified_date() <> get_the_date() ): ?>
             <?php printf(
                 /* translators: %s: Post publish time. */
-                __( 'Published on %s', 'minimalistflex' ),
+                esc_html__( 'Published on %s', 'minimalistflex' ),
                 get_the_date()
             ) ?>
         <?php else: ?>
             <?php printf(
                 /* translators: %s: Post last modified time. */
-                __( 'Last modified on %s', 'minimalistflex' ),
+                esc_html__( 'Last modified on %s', 'minimalistflex' ),
                 get_the_modified_date()
             ) ?>
         <?php endif; ?>
