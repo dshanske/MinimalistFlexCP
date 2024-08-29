@@ -48,6 +48,10 @@ As a bonus, we have 4 pre-built color palettes for you.
 
 == Changelog ==
 
+= 1.0.5 =
+* Addressed a menu styling issue.
+* Fixed footer credit not being properly displayed.
+
 = 1.0.4 =
 * Addressed a security issue where many places have not used proper escaping / no escaping at all.
 * Added correct styling for the main content without a sidebar.
