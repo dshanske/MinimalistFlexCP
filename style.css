@@ -369,6 +369,7 @@ button:focus {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
 }
 
 .minimalistflex-menu li {
@@ -390,7 +391,7 @@ button:focus {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     background-color: var(--minimalistflex-header-bg);
     border-radius: 2px;
     width: 200px;
@@ -1528,6 +1529,7 @@ a img.alignwide {
 
     .minimalistflex-menu ul {
         flex-direction: column;
+        align-items: normal;
     }
 
     .minimalistflex-menu .menu-item-has-children:hover > .sub-menu {
