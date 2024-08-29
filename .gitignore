@@ -1,3 +1,4 @@
 .git export-ignore
 .gitignore export-ignore
 .github export-ignore
+readme.txt export-ignore
