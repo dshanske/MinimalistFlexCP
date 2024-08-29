@@ -75,7 +75,7 @@ if( is_home() ) {
                 <?php
                     printf(
                         /* translators: %s: Link to theme author website. */
-                        __( 'Theme <a href="%s">MinimalistFlex</a>.', 'minimalistflex' ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+                        wp_kses_data( __( 'Theme <a href="%s">MinimalistFlex</a>.', 'minimalistflex' ) ),
                         esc_url( 'https://onmyodev.com/' )
                     )
                 ?>
