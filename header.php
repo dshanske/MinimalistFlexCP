@@ -22,58 +22,58 @@ if ( function_exists( 'wp_body_open' ) ) {
 <?php
 
 if( is_home() ) {
-    $sidebar = get_theme_mod( 'minimalistflex_layout_home_sidebar', 'right' );
-    $header = get_theme_mod( 'minimalistflex_layout_home_header', 'yes' );
+    $mf_sidebar = get_theme_mod( 'minimalistflex_layout_home_sidebar', 'right' );
+    $mf_header = get_theme_mod( 'minimalistflex_layout_home_header', 'yes' );
 } elseif ( is_front_page() ) {
-    $sidebar = get_theme_mod( 'minimalistflex_layout_front_sidebar', 'right' );
-    $header = get_theme_mod( 'minimalistflex_layout_front_header', 'yes' );
+    $mf_sidebar = get_theme_mod( 'minimalistflex_layout_front_sidebar', 'right' );
+    $mf_header = get_theme_mod( 'minimalistflex_layout_front_header', 'yes' );
 } elseif ( is_search() ) {
-    $sidebar = get_theme_mod( 'minimalistflex_layout_search_sidebar', 'right' );
-    $header = get_theme_mod( 'minimalistflex_layout_search_header', 'yes' );
+    $mf_sidebar = get_theme_mod( 'minimalistflex_layout_search_sidebar', 'right' );
+    $mf_header = get_theme_mod( 'minimalistflex_layout_search_header', 'yes' );
 } elseif ( is_author() ) {
-    $sidebar = get_theme_mod( 'minimalistflex_layout_author_sidebar', 'right' );
-    $header = get_theme_mod( 'minimalistflex_layout_author_header', 'yes' );
+    $mf_sidebar = get_theme_mod( 'minimalistflex_layout_author_sidebar', 'right' );
+    $mf_header = get_theme_mod( 'minimalistflex_layout_author_header', 'yes' );
 } elseif ( is_archive() ) {
-    $sidebar = get_theme_mod( 'minimalistflex_layout_archive_sidebar', 'right' );
-    $header = get_theme_mod( 'minimalistflex_layout_archive_header', 'yes' );
+    $mf_sidebar = get_theme_mod( 'minimalistflex_layout_archive_sidebar', 'right' );
+    $mf_header = get_theme_mod( 'minimalistflex_layout_archive_header', 'yes' );
 } elseif ( is_single() ) {
-    $sidebar = get_theme_mod( 'minimalistflex_layout_singular_sidebar', 'right' );
-    $header = get_theme_mod( 'minimalistflex_layout_singular_header', 'yes' );
+    $mf_sidebar = get_theme_mod( 'minimalistflex_layout_singular_sidebar', 'right' );
+    $mf_header = get_theme_mod( 'minimalistflex_layout_singular_header', 'yes' );
 } elseif ( is_page() ) {
-    $sidebar = get_theme_mod( 'minimalistflex_layout_page_sidebar', 'right' );
-    $header = get_theme_mod( 'minimalistflex_layout_page_header', 'yes' );
+    $mf_sidebar = get_theme_mod( 'minimalistflex_layout_page_sidebar', 'right' );
+    $mf_header = get_theme_mod( 'minimalistflex_layout_page_header', 'yes' );
 }
 
-$link = get_theme_mod( 'minimalistflex_header_link' );
-$label = get_theme_mod( 'minimalistflex_header_label' );
+$mf_link = get_theme_mod( 'minimalistflex_header_link' );
+$mf_label = get_theme_mod( 'minimalistflex_header_label' );
 
 ?>
 
 <a class="screen-reader-text" href="#main-content"><?php esc_html_e( 'Skip to main content', 'minimalistflex' ) ?></a>
 
-<?php if( get_header_image() && $header === 'yes' ): ?>
+<?php if( get_header_image() && $mf_header === 'yes' ): ?>
     <header class="minimalistflex-header-image">
-        <?php if ( strlen( $link ) ): ?>
-            <a href="<?php echo esc_url( $link ) ?>" aria-label="<?php
-                    if ( strlen( $label ) ) {
-                        echo esc_attr( $label );
+        <?php if ( strlen( $mf_link ) ): ?>
+            <a href="<?php echo esc_url( $mf_link ) ?>" aria-label="<?php
+                    if ( strlen( $mf_label ) ) {
+                        echo esc_attr( $mf_label );
                     } else {
                         esc_attr_e( 'The header image link.', 'minimalistflex' );
                     }
                 ?>">
         <?php endif; ?>
             <img src="<?php header_image(); ?>" aria-label="<?php
-                if ( strlen( $label ) ) {
+                if ( strlen( $mf_label ) ) {
                     printf(
                         /* translators: %s: The label of the header image link. */
                         esc_attr__( 'The image of the header image link to "%s".', 'minimalistflex' ),
-                        esc_attr( $label )
+                        esc_attr( $mf_label )
                     );
                 } else {
                     esc_attr_e( 'The header image.', 'minimalistflex' );
                 }
             ?>">
-        <?php if ( strlen( $link ) ): ?>
+        <?php if ( strlen( $mf_link ) ): ?>
             </a>
         <?php endif; ?>
     </header>
@@ -81,11 +81,11 @@ $label = get_theme_mod( 'minimalistflex_header_label' );
 
 <header class="minimalistflex-header">
     <?php if ( has_custom_logo() ): ?>
-        <?php echo get_custom_logo(); ?>
+        <?php echo get_custom_logo() // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
     <?php endif; ?>
     <?php if ( display_header_text() ): ?>
         <h1 class="blog-title">
-            <a href="<?php echo esc_url( home_url() ); ?>" class="blog-title-link"><?php echo get_bloginfo( 'name' ) ?></a>
+            <a href="<?php echo esc_url( home_url() ); ?>" class="blog-title-link"><?php echo wp_kses_data( get_bloginfo( 'name' ) ) ?></a>
         </h1>
     <?php endif; ?>
     <div class="spacer"></div>
@@ -105,7 +105,7 @@ $label = get_theme_mod( 'minimalistflex_header_label' );
     <?php endif; ?>
 </header>
 
-<main class="minimalistflex-master <?php echo 'minimalistflex-sidebar-layout-' . $sidebar ?>">
+<main class="minimalistflex-master <?php echo 'minimalistflex-sidebar-layout-' . esc_attr( $mf_sidebar ) ?>">
 
 <article class="minimalistflex-content" id="main-content">
 

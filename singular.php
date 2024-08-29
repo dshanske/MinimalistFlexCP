@@ -34,7 +34,7 @@ $mf_default_image_location = get_theme_mod( 'minimalistflex_default_featured_ima
                     printf(
                         /* translators: %s: Title of the post. */
                         esc_attr__( 'The thumbnail image for %s.', 'minimalistflex' ),
-                        get_the_title()
+                        esc_attr( get_the_title() )
                     )
                 ?>">
             </div>

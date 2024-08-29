@@ -20,7 +20,7 @@ $mf_default_image_location = get_theme_mod( 'minimalistflex_default_featured_ima
             printf(
                 /* translators: %s: Post title associated with the thumbnail image. */
                 esc_attr__( 'Thumbnail image of %s. Also a link that navigates to it.', 'minimalistflex' ),
-                get_the_title()
+                esc_attr( get_the_title() )
             ) ?>">
                 <?php the_post_thumbnail( 'large' ); ?>
             </a>
@@ -37,13 +37,13 @@ $mf_default_image_location = get_theme_mod( 'minimalistflex_default_featured_ima
             printf(
                 /* translators: %s: Post title associated with the thumbnail image. */
                 esc_attr__( 'The thhumbnail image link for %s', 'minimalistflex' ),
-                get_the_title()
+                esc_attr( get_the_title() )
             ) ?>">
                 <img src="<?php echo esc_url( $mf_imgsrc );?>" aria-label="<?php
                     printf(
                         /* translators: %s: Title of the post. */
                         esc_attr__( 'The thumbnail image for %s.', 'minimalistflex' ),
-                        get_the_title()
+                        esc_attr( get_the_title() )
                     )
                 ?>">
             </a>
@@ -53,14 +53,15 @@ $mf_default_image_location = get_theme_mod( 'minimalistflex_default_featured_ima
                 <div class="panel-comment-count">
                     <?php
                         printf(
-                            _nx(
-                                '1 Comment',
+                            /* translators: %d: Number of comments. */
+                            esc_html( _nx(
+                                '%d Comment',
                                 '%d Comments',
                                 get_comments_number(),
                                 'comment count',
                                 'minimalistflex'
-                            ),
-                            number_format_i18n( get_comments_number() )
+                            ) ),
+                            esc_html( number_format_i18n( get_comments_number() ) )
                         );
                     ?>
                 </div>
@@ -86,13 +87,13 @@ $mf_default_image_location = get_theme_mod( 'minimalistflex_default_featured_ima
                             <?php printf(
                                 /* translators: %s: Post publish time. */
                                 esc_html__( 'Published on %s', 'minimalistflex' ),
-                                get_the_date()
+                                esc_html( get_the_date() )
                             ) ?>
                         <?php else: ?>
                             <?php printf(
                                 /* translators: %s: Post last modified time. */
                                 esc_html__( 'Last modified on %s', 'minimalistflex' ),
-                                get_the_modified_date()
+                                esc_html( get_the_modified_date() )
                             ) ?>
                         <?php endif; ?>
                     </div>
@@ -101,7 +102,7 @@ $mf_default_image_location = get_theme_mod( 'minimalistflex_default_featured_ima
                         printf(
                             /* translators: %s: Post title. */
                             esc_attr__( 'Read more of %s', 'minimalistflex' ),
-                            get_the_title()
+                            esc_attr( get_the_title() )
                         )
                     ?>">
                     <?php echo esc_html( get_theme_mod( 'minimalistflex_interface_readlink', __( 'Read More', 'minimalistflex' ) ) ); ?>

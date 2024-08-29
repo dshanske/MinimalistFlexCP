@@ -31,6 +31,4 @@ if ( !defined( 'WPINC' ) ) {
     </div>
 <?php endif; ?>
 
-<?php  ?>
-
 <?php get_footer(); ?>

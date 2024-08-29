@@ -39,7 +39,7 @@ if ( !defined( 'WPINC' ) ) {
                 <?php $mf_meta = get_the_author_meta( $mf_metas[$mf_i] ); ?>
                 <?php if ( strlen( $mf_meta ) && get_theme_mod( 'minimalistflex_layout_author_elements_' . $mf_metas[$mf_i], 'yes' ) === 'yes' ): ?>
                     <div class="author-detail">
-                        <h2><?php echo $mf_titles[$mf_i] ?></h2>
+                        <h2><?php echo $mf_titles[$mf_i] // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h2>
                         <?php echo esc_html( $mf_meta ) ?>
                     </div>
                 <?php endif; ?>
@@ -51,7 +51,7 @@ if ( !defined( 'WPINC' ) ) {
                 printf(
                     /* translators: %s: The author display name. */
                     esc_html__( 'All posts by %s', 'minimalistflex' ),
-                    get_the_author_meta( 'display_name' )
+                    esc_html( get_the_author_meta( 'display_name' ) )
                 )
             ?>
         </h2>

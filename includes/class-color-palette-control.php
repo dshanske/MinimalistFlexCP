@@ -16,7 +16,7 @@ class MinimalistFlex_Color_Palette_Custom_Control extends WP_Customize_Control
     public function enqueue()
     {
         wp_enqueue_style('color-palette-style', get_template_directory_uri().'/css/color-palette.css');
-        wp_enqueue_script('color-palette-script', get_template_directory_uri().'/js/color-palette.js', array( 'jquery' ), rand(), true);
+        wp_enqueue_script('color-palette-script', get_template_directory_uri().'/js/color-palette.js', array( 'jquery' ), null, true);
     }
 
     public function render_content()

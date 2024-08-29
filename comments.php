@@ -17,14 +17,14 @@ if ( post_password_required() ) {
 			printf(
 				/* translators: %1$s: Number of comments. %2$s: Post title. */
 				esc_html( _nx(
-					'One comment on "%2$s"',
+					'%1$s comment on "%2$s"',
 					'%1$s comments on "%2$s"',
 					get_comments_number(),
 					'comments title',
 					'minimalistflex'
 				) ),
-				number_format_i18n( get_comments_number() ),
-				'<span>' . get_the_title() . '</span>'
+				esc_html( number_format_i18n( get_comments_number() ) ),
+				'<span>' . esc_html( get_the_title() ) . '</span>'
 			);
 			?>
 		</h2>

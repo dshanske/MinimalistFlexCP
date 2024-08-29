@@ -17,7 +17,7 @@ class MinimalistFlex_Multi_Image_Custom_Control extends WP_Customize_Control
     {
         wp_enqueue_media();
         wp_enqueue_style('multi-image-style', get_template_directory_uri().'/css/multi-image.css');
-        wp_enqueue_script('multi-image-script', get_template_directory_uri().'/js/multi-image.js', array( 'jquery' ), rand(), true);
+        wp_enqueue_script('multi-image-script', get_template_directory_uri().'/js/multi-image.js', array( 'jquery' ), null, true);
     }
 
     public function render_content()
