@@ -215,8 +215,8 @@ button:focus {
 .minimalistflex-master table tbody tr:nth-child(2n) {
     background-color: color-mix(
         in srgb,
-        #f0f0f0,
-        transparent 25%
+        var(--minimalistflex-header-sidebar),
+        transparent 50%
     )
 }
 
