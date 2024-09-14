@@ -19,6 +19,9 @@ fully responsive, and looks good on very small screens.
 We also tried our best to make the theme as accessible as 
 possible.
 
+The MinimalistFlex WordPress theme, Copyright Frank419 2024.
+MinimalistFlex is licensed under the terms of GNU General Public License, Version 3.0.
+
 ## Frequently Asked Quesions
 
 ### How do I set default featured images?
