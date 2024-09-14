@@ -34,12 +34,12 @@ function minimalistflex_add_supports() {
 		'abstract' => Array(
 			'url' => get_template_directory_uri() . '/defaults/header.png',
 			'thumbnail_url' => get_template_directory_uri() . '/defaults/header.png',
-			'description' => 'An abstract default header image.'
+			'description' => esc_html__( 'An abstract default header image.', 'minimalistflex' )
 		),
 		'lines' => Array(
 			'url' => get_template_directory_uri() . '/defaults/header2.png',
 			'thumbnail_url' => get_template_directory_uri() . '/defaults/header2.png',
-			'description' => 'A default header image that contains three lines.'
+			'description' => esc_html__( 'A default header image that contains three lines.', 'minimalistflex' )
 		)
 	) );
 
