@@ -787,8 +787,8 @@ function minimalistflex_customize_register( $wp_customize ) {
         'label' => __( 'Publish Date', 'minimalistflex' ),
         'description' => __( 'Whether to display the published date.', 'minimalistflex' ),
         'choices' => Array(
-            'publish' => __( 'Yes, publish time only.', 'minimalistflex' ),
-            'modify' => __( 'Yes, and display modified time if possible.', 'minimalistflex' ),
+            'publish' => __( 'Yes, published date only.', 'minimalistflex' ),
+            'modify' => __( 'Display modified date if different, otherwise published date.', 'minimalistflex' ),
             'no' => __( 'No', 'minimalistflex' )
         )
     ) );
