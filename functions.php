@@ -16,7 +16,10 @@ function minimalistflex_add_supports() {
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( "align-wide" );
 	add_theme_support( "post-thumbnails" );
-	add_theme_support( 'html5', Array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script', 'navigation-widgets' ) );
+	if ( ! function_exists( 'classicpress_version' ) ) {
+		add_theme_support( 'html5', Array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script', 'navigation-widgets' ) );
+	}
+
 	add_theme_support( 'custom-logo', Array(
 		'width' => '80',
 		'height' => '80'
@@ -140,7 +143,7 @@ load_theme_textdomain( 'minimalistflex', get_template_directory() . '/languages'
 
 require_once 'includes/customizer.php';
 
-function minimalistflex_custom_excerpt_length() {
+function minimalistflex_custom_excerpt_length( $length ) {
 	return intval( get_theme_mod( 'minimalistflex_interface_excerpt', '55' ) );
 }
 add_filter( 'excerpt_length', 'minimalistflex_custom_excerpt_length', 999 );
