@@ -1,12 +1,12 @@
-=== MinimalistFlex ===
-Stable tag:        1.0.2
-Contributors:      frank419
+=== MinimalistFlexCP ===
+Stable tag:        2.0.0
+Contributors:      dshanske,frank419
 Tags:              two-columns ,left-sidebar, right-sidebar, custom-colors, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, sticky-post, theme-options, translation-ready, blog
-Tested up to:      6.6
+Tested up to:      6.7
 Requires at least: 4.9
 License:           GNU General Public License v3.0 or later
 License URI:       https://www.gnu.org/licenses/gpl-3.0.html
-Copyright:         The MinimalistFlex theme, Copyright Frank419 2024, licensed under GPLv3.
+Copyright:         MinimalistFlex theme, Copyright Frank419 2024, licensed under GPLv3. MinimalistFlexCP modified by DShanske
 
 MinimalistFlex is an elegant, easy to use theme that aims to 
 provide a smooth user experience.

@@ -1,26 +1,14 @@
-# MinimalistFlex
-MinimalistFlex is an elegant, easy to use theme that aims to 
+# MinimalistFlexCP
+MinimalistFlexCP is a customized fork of MinimalistFlex, an elegant, easy to use theme that aims to 
 provide a smooth user experience.
 
 ## Description
-MinimalistFlex is a well designed theme that provides as 
-many options as possible while not being overwhelming.
 
-MinimalistFlex supports all the features you love: flexible header 
-images, multiple widget areas, custom layout & colors, and 
-some exclusive features like setting default featured images.
+MinimalistFlexCP offers alternative options while retaining the simplicity of its parent. It is only tested with ClassicPress.
 
-MinimalistFlex is tested against many WordPress and PHP versions, 
-including the latest version as well as older versions 
-up to WordPress 4.9 and PHP 5.6.
+MinimalistFlex was created by Frank419, and licensed under the terms of GNU General Public License, Version 3.0.
 
-MinimalistFlex put all kinds of visitors in its heart. MinimalistFlex is 
-fully responsive, and looks good on very small screens. 
-We also tried our best to make the theme as accessible as 
-possible.
-
-The MinimalistFlex WordPress theme, Copyright Frank419 2024.
-MinimalistFlex is licensed under the terms of GNU General Public License, Version 3.0.
+MinimalistFlexCP retains this license, but is maintained by David Shanske.
 
 ## Frequently Asked Quesions
 
@@ -41,6 +29,12 @@ changed.
 As a bonus, we have 4 pre-built color palettes for you.
 
 ## Changelog
+
+### Forked Version by dshanske ###
+
+### 2.0.0 ###
+
+* Major version change to indicate change from upstream
 
 ### 1.0.5
 * Addressed a menu styling issue.
