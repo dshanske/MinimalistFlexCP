@@ -405,6 +405,13 @@ function minimalistflex_customize_register( $wp_customize ) {
         'default' => 'yes',
         'sanitize_callback' => 'minimalistflex_sanitize_radio_cb'
     ) );
+    $wp_customize -> add_setting( 'minimalistflex_interface_full_content', Array(
+        'type' => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'transport' => 'refresh',
+        'default' => 'yes',
+        'sanitize_callback' => 'minimalistflex_sanitize_radio_cb'
+    ) );
     $wp_customize -> add_setting( 'minimalistflex_interface_excerpt', Array(
         'type' => 'theme_mod',
         'capability' => 'edit_theme_options',
@@ -717,6 +724,17 @@ function minimalistflex_customize_register( $wp_customize ) {
         'section' => 'minimalistflex_interface',
         'label' => __( 'Scroll to top button', 'minimalistflex' ),
         'description' => __( 'Whether to display a "Scroll to top" button in the bottom-right corner.', 'minimalistflex' ),
+        'choices' => Array(
+            'yes' => __( 'Yes', 'minimalistflex' ),
+            'no' => __( 'No', 'minimalistflex' )
+        )
+    ) );
+    $wp_customize -> add_control( 'minimalistflex_interface_full_content', Array(
+        'type' => 'radio',
+        'priority' => 10,
+        'section' => 'minimalistflex_interface',
+        'label' => __( 'Show Full Content', 'minimalistflex' ),
+        'description' => __( 'Show the Full Content on non Singular Pages.', 'minimalistflex' ),
         'choices' => Array(
             'yes' => __( 'Yes', 'minimalistflex' ),
             'no' => __( 'No', 'minimalistflex' )

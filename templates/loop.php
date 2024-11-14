@@ -67,8 +67,12 @@ $mf_default_image_location = get_theme_mod( 'minimalistflex_default_featured_ima
                 </div>
             <?php endif; ?>
             <h1 class="panel-title"><?php the_title(); ?></h1>
-            <div class="panel-main">
-                <?php the_excerpt(); ?>
+	    <div class="panel-main">
+            	<?php if ( get_theme_mod( 'minimalistflex_interface_full_content', 'yes' ) === 'yes' ) {
+			the_content(); 
+		    } else {
+			    the_excerpt();
+		} ?>
                 <?php wp_link_pages( Array(
                     'before' => '<p class="panel post-nav-links"><span class="post-nav-links-indicator">' . esc_html__('Pages: ', 'minimalistflex') . '</span></p>'
                 ) ); ?>
