@@ -3,6 +3,13 @@ if ( !defined( 'WPINC' ) ) {
     die;
 }
 
+require get_template_directory() . '/includes/template-functions.php';
+
+/**
+ * Plugin Support
+ */
+require get_template_directory() . '/includes/plugin-support.php';
+
 function minimalistflex_add_supports() {
 	add_theme_support( 'custom-background', Array(
 		'default-image' => get_template_directory_uri() . '/defaults/bg.png',
