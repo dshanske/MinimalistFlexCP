@@ -558,7 +558,7 @@ button:focus {
     font-weight: normal;
 }
 
-.panel-title a:link {
+.panel-title a:link, .panel-title a:visited {
     text-decoration: none;
     color: var(--minimalistflex-default);
 }
