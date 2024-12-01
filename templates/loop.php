@@ -66,7 +66,7 @@ $mf_default_image_location = get_theme_mod( 'minimalistflex_default_featured_ima
                     ?>
                 </div>
             <?php endif; ?>
-            <h1 class="panel-title"><?php the_title(); ?></h1>
+	    <h1 class="panel-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 	    <div class="panel-main">
             	<?php if ( get_theme_mod( 'minimalistflex_interface_full_content', 'yes' ) === 'yes' ) {
 			the_content(); 

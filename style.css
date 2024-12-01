@@ -558,6 +558,15 @@ button:focus {
     font-weight: normal;
 }
 
+.panel-title a:link {
+    text-decoration: none;
+    color: var(--minimalistflex-default);
+}
+
+.panel-title a:hover {
+    text-decoration: underline;
+}
+
 .panel-main {
     border-bottom: solid 1px var(--minimalistflex-shadow);
 }
