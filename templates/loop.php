@@ -55,8 +55,8 @@ $mf_default_image_location = get_theme_mod( 'minimalistflex_default_featured_ima
                         printf(
                             /* translators: %d: Number of comments. */
                             esc_html( _nx(
-                                '%d Comment',
-                                '%d Comments',
+                                '%d Response',
+                                '%d Responses',
                                 get_comments_number(),
                                 'comment count',
                                 'minimalistflex'
@@ -78,12 +78,6 @@ $mf_default_image_location = get_theme_mod( 'minimalistflex_default_featured_ima
                 ) ); ?>
             </div>
             <div class="panel-meta">
-                <?php if ( get_theme_mod( 'minimalistflex_interface_publisher', 'yes' ) === 'yes' ): ?>
-                    <a class="panel-author" href="<?php echo esc_url( get_author_posts_url($mf_id) ) ?>">
-                        <span aria-hidden="true"><?php echo get_avatar( $mf_id, 80 ) ?></span>
-                        <?php the_author() ?>
-                    </a>
-                <?php endif; ?>
                 <?php $mf_datemode = get_theme_mod( 'minimalistflex_interface_date', 'modify' ); ?>
                 <?php if ( $mf_datemode <> 'no' ): ?>
                     <div class="panel-author">

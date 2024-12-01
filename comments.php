@@ -17,8 +17,8 @@ if ( post_password_required() ) {
 			printf(
 				/* translators: %1$s: Number of comments. %2$s: Post title. */
 				esc_html( _nx(
-					'%1$s comment on "%2$s"',
-					'%1$s comments on "%2$s"',
+					'%1$s response on "%2$s"',
+					'%1$s responses on "%2$s"',
 					get_comments_number(),
 					'comments title',
 					'minimalistflex'
@@ -41,9 +41,9 @@ if ( post_password_required() ) {
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 			<nav class="nav-links navigation comment-navigation" role="navigation">
-				<h1 class="screen-reader-text section-heading"><?php esc_html_e( 'Comment navigation', 'minimalistflex' ); ?></h1>
-				<div class="previous"><?php previous_comments_link( esc_html__( '&larr; Older Comments', 'minimalistflex' ) ); ?></div>
-				<div class="next"><?php next_comments_link( esc_html__( 'Newer Comments &rarr;', 'minimalistflex' ) ); ?></div>
+				<h1 class="screen-reader-text section-heading"><?php esc_html_e( 'Responses navigation', 'minimalistflex' ); ?></h1>
+				<div class="previous"><?php previous_comments_link( esc_html__( '&larr; Older Responss', 'minimalistflex' ) ); ?></div>
+				<div class="next"><?php next_comments_link( esc_html__( 'Newer Responses &rarr;', 'minimalistflex' ) ); ?></div>
 			</nav>
 		<?php endif; ?>
 

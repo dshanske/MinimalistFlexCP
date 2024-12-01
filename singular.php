@@ -41,7 +41,6 @@ $mf_default_image_location = get_theme_mod( 'minimalistflex_default_featured_ima
         <?php endif; ?>
         <div class="singular-main">
             <h1 class="panel-title"><?php the_title(); ?></h1>
-            <?php get_template_part( 'templates/publisher' ) ?>
             <div class="panel-main">
                 <?php the_content(); ?>
                 <?php wp_link_pages( Array(

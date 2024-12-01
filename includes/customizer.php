@@ -433,13 +433,6 @@ function minimalistflex_customize_register( $wp_customize ) {
         'default' => 'yes',
         'sanitize_callback' => 'minimalistflex_sanitize_radio_cb'
     ) );
-    $wp_customize -> add_setting( 'minimalistflex_interface_publisher', Array(
-        'type' => 'theme_mod',
-        'capability' => 'edit_theme_options',
-        'transport' => 'refresh',
-        'default' => 'yes',
-        'sanitize_callback' => 'minimalistflex_sanitize_radio_cb'
-    ) );
     $wp_customize -> add_setting( 'minimalistflex_interface_date', Array(
         'type' => 'theme_mod',
         'capability' => 'edit_theme_options',
@@ -764,17 +757,6 @@ function minimalistflex_customize_register( $wp_customize ) {
         'section' => 'minimalistflex_interface',
         'label' => __( 'Comment Count', 'minimalistflex' ),
         'description' => __( 'Whether to display the comment count of the posts listed in an archive page.', 'minimalistflex' ),
-        'choices' => Array(
-            'yes' => __( 'Yes', 'minimalistflex' ),
-            'no' => __( 'No', 'minimalistflex' )
-        )
-    ) );
-    $wp_customize -> add_control( 'minimalistflex_interface_publisher', Array(
-        'type' => 'radio',
-        'priority' => 35,
-        'section' => 'minimalistflex_interface',
-        'label' => __( 'Publisher', 'minimalistflex' ),
-        'description' => __( 'Whether to display the publisher.', 'minimalistflex' ),
         'choices' => Array(
             'yes' => __( 'Yes', 'minimalistflex' ),
             'no' => __( 'No', 'minimalistflex' )
